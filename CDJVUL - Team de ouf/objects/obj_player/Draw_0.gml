@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_player,movementType,x,y,xscale,yscale,rot,c_white,alpha)
