@@ -3,7 +3,7 @@
   "%Name":"spr_poisson",
   "bboxMode":0,
   "bbox_bottom":21,
-  "bbox_left":3,
+  "bbox_left":2,
   "bbox_right":18,
   "bbox_top":5,
   "collisionKind":1,

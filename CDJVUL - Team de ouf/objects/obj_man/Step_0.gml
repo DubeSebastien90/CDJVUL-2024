@@ -1,22 +1,26 @@
 //variables
 mouse_down = mouse_check_button(mb_left) && canAttack
 mouse_pressed = mouse_check_button_pressed(mb_left) && canAttack
-dir = point_direction(x,y-8,mouse_x,mouse_y)
 press_left = keyboard_check(ord("A"))
 press_right =  keyboard_check(ord("D"))
 press_up = keyboard_check(ord("W"))
 press_down = keyboard_check(ord("S"))
+press_something = press_up||press_down||press_right||press_left
 
 cote = sign(mouse_x-x) 
 
 if obj_legs.movementType == 4{
 	mouse_down = keyboard_check(vk_space) && canAttack
 	mouse_pressed = keyboard_check_pressed(vk_space) && canAttack
-	dir = point_direction(0,0,press_right-press_left,press_down-press_up)
+	if press_something{
+		dir = point_direction(0,0,press_right-press_left,press_down-press_up)
+	}
 	cote = 1
 	if dir > 90 && dir < 270{ 
 		cote = -1
 	}
+} else {
+	dir = point_direction(x,y-8,mouse_x,mouse_y)
 }
 
 //attaque
@@ -116,8 +120,8 @@ if weapon == 0{
 		dirTrue += 360
 		dir += 360
 	}
-	weaponX = dcos(dirTrue)*swordReach + x
-	weaponY = -dsin(dirTrue)*swordReach + y - 9
+	weaponX = dcos(dirTrue)*arcReach + x
+	weaponY = -dsin(dirTrue)*arcReach + y - 9
 	rot = dir
 	//tirer
 	weaponIndex = bowState
@@ -150,4 +154,28 @@ if weapon == 0{
 	obj_arc.x = weaponX
 	obj_arc.y = weaponY
 	obj_arc.image_index = weaponIndex
+} else if weapon == 2{
+	//choisir direction
+	if dir < 90 && dirTrue > 270{
+		dir += 360
+	}
+	if dir > 270 && dirTrue < 90{
+		dir -= 360
+	}
+	dirTrue = lerp(dirTrue,dir,0.1)
+	if dirTrue > 360 && dir > 360{
+		dirTrue -= 360
+		dir -= 360
+	}
+	if dirTrue < 0 && dir < 0{
+		dirTrue += 360
+		dir += 360
+	}
+	weaponX = dcos(dirTrue)*boomerangReach + x
+	weaponY = -dsin(dirTrue)*boomerangReach + y - 9
+	rot = dir
+	
+	obj_boomerang.image_angle = rot
+	obj_boomerang.x = weaponX
+	obj_boomerang.y = weaponY
 }
