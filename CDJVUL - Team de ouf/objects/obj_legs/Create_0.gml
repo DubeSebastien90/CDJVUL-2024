@@ -68,9 +68,10 @@ if movementType == 3{
 	x += 16*4
 	y -= 8
 }
-for(var i = 0; i < lengthMax; i++){
+for(var i = 0; i < lengthMax + 1; i++){
 	prevX[i] = x - 16*i
 	prevY[i] = y
+	snakePiece[i] = instance_create_depth(x-16*i,7,depth,obj_bout_serpent)
 }
 
 //type 4 - taupe

@@ -10,8 +10,8 @@
   "name":"obj_man",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"gr_obj_player",
+    "path":"folders/Objets/gr_obj_player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

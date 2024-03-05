@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy",
+  "%Name":"obj_arc",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enemy",
+  "name":"obj_arc",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"gr_obj_arme",
+    "path":"folders/Objets/gr_obj_arme.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"boss",
-    "path":"sprites/boss/boss.yy",
+    "name":"spr_bow",
+    "path":"sprites/spr_bow/spr_bow.yy",
   },
   "spriteMaskId":null,
   "visible":true,

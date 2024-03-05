@@ -96,6 +96,9 @@ if movementType == 0{
 	//animation
 	xscale = 1 + (zspd/5)
 	yscale = 2-xscale
+	obj_man.xscale = xscale 
+	obj_man.yscale = yscale
+	
 } else if movementType = 3{
 	//snake
 	moveX = prevXSnake
@@ -111,10 +114,16 @@ if movementType == 0{
 			for(var i = length - 1; i > 0; i--){
 				prevX[i] = prevX[i-1]
 				prevY[i] = prevY[i-1]
+				snakePiece[i].depth = -prevY[i]-8
+				snakePiece[i].x = prevX[i] 
+				snakePiece[i].y = prevY[i]
 			}
 		//}
 		prevX[0] = x
 		prevY[0] = y
+		snakePiece[0].depth = -y-8
+		snakePiece[0].x = x 
+		snakePiece[0].y = y
 		moveX = press_right - press_left
 		if moveX == 0{
 			moveY = press_down - press_up
@@ -151,7 +160,7 @@ if movementType == 0{
 		alpha = 0.2
 		if cooldownPartDirt < 0{
 			cooldownPartDirt = 2
-			instance_create_depth(x+random_range(-6,6),y+random_range(-6,6),depth + 1,obj_part_dirt)
+			instance_create_depth(x+random_range(-6,6),y+random_range(-6,6),2,obj_part_dirt)
 		}
 		cooldownPartDirt -= 1
 		z = lerp(z,-10,0.1)
@@ -204,3 +213,7 @@ y += vspd
 
 obj_man.x = x 
 obj_man.y = y - 4 - z
+
+//depth
+depth = -bbox_bottom - z
+obj_man.depth = depth - 1
