@@ -14,7 +14,8 @@ xscale = 1
 yscale = 1
 alpha = 1
 
-movementType = 4
+randomise()
+movementType = round(random(5))
 
 //type 0 - crab
 axis = 0
@@ -23,7 +24,7 @@ lerpCrab = 0.1
 
 //type 1 - bélier
 dashCooldownMax = 30
-dashCooldown = 0
+dashCooldown = 0 
 dashDuration = 20
 dashDurationCooldown = 0
 dashX = 0
