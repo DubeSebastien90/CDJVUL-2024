@@ -39,10 +39,12 @@ if movementType == 0{
 		moveY = press_down - press_up
 		actualWalkspd = walkspd_belier
 		alpha = 1
+		obj_man.canAttack = true
 	} else {
 		moveX = dashX
 		moveY = dashY
 		actualWalkspd = walkspd_dashBelier
+		obj_man.canAttack = false
 	}
 	if press_space_pressed && dashCooldown <= 0{
 		dashDurationCooldown = dashDuration
@@ -144,9 +146,13 @@ if movementType == 0{
 			instance_create_depth(x+random_range(-6,6),y+random_range(-6,6),depth + 1,obj_part_dirt)
 		}
 		cooldownPartDirt -= 1
+		z = lerp(z,-10,0.1)
+		obj_man.canAttack = false
 	} else {
 		cooldownPartDirt = 0
 		alpha = 1
+		z = lerp(z,0,0.1)
+		obj_man.canAttack = true
 	}
 }
 
@@ -187,3 +193,6 @@ if place_meeting(x+hspd,y+vspd,obj_collision){
 
 x += hspd
 y += vspd
+
+obj_man.x = x 
+obj_man.y = y - 4 - z

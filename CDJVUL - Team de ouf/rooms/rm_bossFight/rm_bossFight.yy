@@ -12,6 +12,7 @@
     {"name":"inst_60DD6A65","path":"rooms/rm_bossFight/rm_bossFight.yy",},
     {"name":"inst_5303FD0C","path":"rooms/rm_bossFight/rm_bossFight.yy",},
     {"name":"inst_54C24689","path":"rooms/rm_bossFight/rm_bossFight.yy",},
+    {"name":"inst_24437537","path":"rooms/rm_bossFight/rm_bossFight.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -19,7 +20,8 @@
         {"$GMRInstance":"","%Name":"inst_692198AD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_692198AD","objectId":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":288.0,},
       ],"layers":[],"name":"topLayer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"joueur","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"","%Name":"inst_38B52613","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_38B52613","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":96.0,},
+        {"$GMRInstance":"","%Name":"inst_38B52613","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_38B52613","objectId":{"name":"obj_legs","path":"objects/obj_legs/obj_legs.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":96.0,},
+        {"$GMRInstance":"","%Name":"inst_24437537","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_24437537","objectId":{"name":"obj_man","path":"objects/obj_man/obj_man.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":64.0,},
       ],"layers":[],"name":"joueur","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"collision","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_7E37F35C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7E37F35C","objectId":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":21.0,"scaleY":1.0,"x":0.0,"y":176.0,},

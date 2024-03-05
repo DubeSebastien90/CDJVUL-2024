@@ -15,7 +15,7 @@ yscale = 1
 alpha = 1
 
 randomise()
-movementType = round(random(5))
+movementType = round(random(4))
 
 //type 0 - crab
 axis = 0
@@ -73,5 +73,5 @@ walkspd_taupe = 1.2
 lerpTaupe = 0.1
 cooldownPartDirt = 0
 
-//type 5 - girafe
+//type 5 - girafe ???
 
