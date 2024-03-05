@@ -5,8 +5,9 @@ press_up = keyboard_check(ord("W"))
 press_down = keyboard_check(ord("S"))
 press_space_pressed = keyboard_check_pressed(vk_space)
 press_space =  keyboard_check(vk_space)
+mouse_down = mouse_check_button(mb_left)
 
-press_something = press_up||press_down||press_right||press_left
+//press_something = press_up||press_down||press_right||press_left
 
 //mouvement
 var moveX = 0
@@ -130,6 +131,23 @@ if movementType == 0{
 	xfin -= xFinDir
 	yfin -= yFinDir
 	cooldownMoveSnake -= 1
+} else if movementType == 4{
+	if mouse_down{
+		lerpVal = lerpTaupe
+		dirTaupe = point_direction(x,y,mouse_x,mouse_y)
+		actualWalkspd = walkspd_taupe
+		moveX = dcos(dirTaupe)
+		moveY = -dsin(dirTaupe)
+		alpha = 0.2
+		if cooldownPartDirt < 0{
+			cooldownPartDirt = 2
+			instance_create_depth(x+random_range(-6,6),y+random_range(-6,6),depth + 1,obj_part_dirt)
+		}
+		cooldownPartDirt -= 1
+	} else {
+		cooldownPartDirt = 0
+		alpha = 1
+	}
 }
 
 if control{

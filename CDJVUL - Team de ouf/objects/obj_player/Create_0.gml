@@ -14,7 +14,7 @@ xscale = 1
 yscale = 1
 alpha = 1
 
-movementType = 3
+movementType = 4
 
 //type 0 - crab
 axis = 0
@@ -67,6 +67,10 @@ for(var i = 0; i < lengthMax; i++){
 }
 
 //type 4 - taupe
+dirTaupe = 0
+walkspd_taupe = 1.2
+lerpTaupe = 0.1
+cooldownPartDirt = 0
 
 //type 5 - girafe
 
