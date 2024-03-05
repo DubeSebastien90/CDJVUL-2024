@@ -6,14 +6,14 @@ if movementType == 2{
 if movementType == 3{
 	//snake
 	for(var i = 0; i < length - 1; i++){
-		draw_sprite_ext(spr_player,movementType,prevX[i],prevY[i],xscale,yscale,rot,c_white,1)
+		draw_sprite_ext(spr[movementType],0,prevX[i],prevY[i],xscale,yscale,rot,c_white,1)
 	}
 	//tête
-	draw_sprite_ext(spr_player,movementType,x,y,xscale,yscale,rot,c_white,1)
+	draw_sprite_ext(spr[movementType],0,x,y,xscale,yscale,rot,c_white,1)
 	//fin
-	draw_sprite_ext(spr_player,movementType,prevX[length-1]+xfin,prevY[length-1]+yfin,xscale,yscale,rot,c_white,1)
+	draw_sprite_ext(spr[movementType],0,prevX[length-1]+xfin,prevY[length-1]+yfin,xscale,yscale,rot,c_white,1)
 } else{
 	//autres
-	draw_sprite_ext(spr_player,movementType,x,y-z,xscale,yscale,rot,c_white,alpha)
+	draw_sprite_ext(spr[movementType],imageIndex,x,y-z,xscale,yscale,rot,c_white,alpha)
 }
 

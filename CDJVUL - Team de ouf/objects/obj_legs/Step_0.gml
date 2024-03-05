@@ -30,6 +30,14 @@ if movementType == 0{
 	} else {
 		moveY = press_down - press_up
 	}
+	if moveY!=0||moveX!=0{
+		cooldownCrabe -= 1
+	}
+	if cooldownCrabe < 0{
+		imageIndex += 1
+		imageIndex = imageIndex%2
+		cooldownCrabe = 20
+	}
 } else if movementType == 1{
 	//bélier
 	lerpVal = lerpBelier
