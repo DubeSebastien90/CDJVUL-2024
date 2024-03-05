@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_enemy",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_enemy",
   "overriddenProperties":[],
@@ -11,7 +9,10 @@
     "name":"Objets",
     "path":"folders/Objets.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_enemy_par",
+    "path":"objects/obj_enemy_par/obj_enemy_par.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"boss",
-    "path":"sprites/boss/boss.yy",
+    "name":"spr_boss",
+    "path":"sprites/spr_boss/spr_boss.yy",
   },
   "spriteMaskId":null,
   "visible":true,

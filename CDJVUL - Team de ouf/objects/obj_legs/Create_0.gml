@@ -16,7 +16,7 @@ alpha = 1
 imageIndex = 0
 
 randomise()
-movementType = 0//round(random(4))
+movementType = 0//irandom(4)
 
 //type 0 - crab
 cooldownCrabe = 0

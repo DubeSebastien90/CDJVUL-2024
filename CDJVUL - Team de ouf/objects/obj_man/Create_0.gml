@@ -5,7 +5,7 @@ xscale = 1
 yscale = 1
 weaponIndex = 0
 
-weapon = 2
+weapon = 1
 
 manRot = 0
 

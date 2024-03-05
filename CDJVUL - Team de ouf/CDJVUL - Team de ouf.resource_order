@@ -23,6 +23,7 @@
   "ResourceOrderSettings":[
     {"name":"obj_arc","order":2,"path":"objects/obj_arc/obj_arc.yy",},
     {"name":"obj_arrow","order":1,"path":"objects/obj_arrow/obj_arrow.yy",},
+    {"name":"obj_boomerang","order":3,"path":"objects/obj_boomerang/obj_boomerang.yy",},
     {"name":"obj_bout_serpent","order":2,"path":"objects/obj_bout_serpent/obj_bout_serpent.yy",},
     {"name":"obj_enemy_par","order":8,"path":"objects/obj_enemy_par/obj_enemy_par.yy",},
     {"name":"obj_enemy","order":7,"path":"objects/obj_enemy/obj_enemy.yy",},
@@ -30,8 +31,7 @@
     {"name":"obj_man","order":1,"path":"objects/obj_man/obj_man.yy",},
     {"name":"obj_part_dirt","order":3,"path":"objects/obj_part_dirt/obj_part_dirt.yy",},
     {"name":"obj_part_wind","order":5,"path":"objects/obj_part_wind/obj_part_wind.yy",},
-    {"name":"obj_boomerang","order":3,"path":"objects/obj_boomerang/obj_boomerang.yy",},
-    {"name":"boss","order":7,"path":"sprites/boss/boss.yy",},
+    {"name":"spr_boss","order":7,"path":"sprites/spr_boss/spr_boss.yy",},
     {"name":"spr_arrow","order":1,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_background","order":1,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_boomerang","order":3,"path":"sprites/spr_boomerang/spr_boomerang.yy",},
