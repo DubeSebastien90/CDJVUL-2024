@@ -48,17 +48,49 @@ if movementType == 0{
 	}
 	dashCooldown -= 1
 	dashDurationCooldown -= 1
+} else if movementType == 2{
+	//poisson
+	if z <= 0{
+		//sauter
+		zspd = 0.6 + random_range(-0.03,0.03)
+		z = 0.01
+		dirX = (press_right - press_left)
+		dirY = (press_down - press_up)
+		
+		dir = point_direction(0,0,dirX,dirY)
+		if dirX = 0 && dirY = 0{
+			dir = random_range(0,360)
+			diffSpd = random_range(-0.20,0.20)
+		} else{
+			dir += random_range(-10,10)
+			diffSpd = random_range(-0.05,0.05) + walkspd_fish
+		}
+	}
+	actualWalkspd = diffSpd
+	moveX = dcos(dir)
+	moveY = -dsin(dir)
+	zspd -= grav
+	
+	//collision avec le sol
+	if z+zspd <= 0{
+		zspd = 0
+		z = 0
+	}
+	z += zspd
+	//animation
+	xscale = 1 + (zspd/5)
+	yscale = 2-xscale
 }
 
 if control{
 	//diagonale
-	var diff = sqrt(power(moveX,2) + power(moveY,2))
-	if diff != 0{
-		diff = 1/diff
+	diff = sqrt(power(moveX,2) + power(moveY,2))
+	if diff = 0{
+		diff = 1
 	}
 	
-	hspd = moveX*actualWalkspd*diff
-	vspd = moveY*actualWalkspd*diff
+	hspd = moveX*actualWalkspd/diff
+	vspd = moveY*actualWalkspd/diff
 } else{
 	hspd = 0
 	vspd = 0

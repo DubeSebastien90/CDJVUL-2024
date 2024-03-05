@@ -41,6 +41,7 @@
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_collision","path":"sprites/spr_collision/spr_collision.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

@@ -2,6 +2,7 @@ vspd = 0
 hspd = 0
 actualWalkspd = 0
 control = true
+diff = 0
 
 rot = 0
 xscale = 1
@@ -23,6 +24,16 @@ dashX = 0
 dashY = 0
 walkspd_belier = 0.6
 walkspd_dashBelier = 2.2
+
+//type 2 - poisson
+dirX = 0
+dirY = 0
+dir = 0
+z = 0
+grav = 0.03
+zspd = 0
+diffSpd = 0
+walkspd_fish = 0.5
 
 //initialisation
 y = room_height/2
