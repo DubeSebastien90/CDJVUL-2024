@@ -11,6 +11,7 @@ var moveX = 0
 var moveY = 0
 
 if movementType == 0{
+	lerpVal = lerpCrab
 	actualWalkspd = walkspd_crab
 	//crabe
 	if press_space_pressed{
@@ -28,6 +29,7 @@ if movementType == 0{
 	}
 } else if movementType == 1{
 	//bélier
+	lerpVal = lerpBelier
 	if dashDurationCooldown <= 0{
 		//bouger normalement
 		moveX = press_right - press_left
@@ -49,6 +51,7 @@ if movementType == 0{
 	dashCooldown -= 1
 	dashDurationCooldown -= 1
 } else if movementType == 2{
+	lerpVal = lerpFish
 	//poisson
 	if z <= 0{
 		//sauter
@@ -80,6 +83,35 @@ if movementType == 0{
 	//animation
 	xscale = 1 + (zspd/5)
 	yscale = 2-xscale
+} else if movementType = 3{
+	//snake
+	moveX = prevXSnake
+	moveY = prevYSnake
+	lerpVal = lerpSnake
+	if cooldownMoveSnake <= 0{
+		moveX = 0
+		moveY = 0
+		//bouger
+		for(var i = length - 1; i > 0; i--){
+			if !(prevX[i] = prevX[i-1] && prevY[i] = prevY[i-1]){
+			if !(prevX[i] = prevX[i-1] && prevY[i] = prevY[i-1]){
+				prevX[i] = prevX[i-1]
+				prevY[i] = prevY[i-1]
+			}
+		}
+		prevX[0] = x
+		prevY[0] = y
+		moveX = press_right - press_left
+		if moveX == 0{
+			moveY = press_down - press_up
+		}
+		prevXSnake = moveX
+		prevYSnake = moveY
+		actualWalkspd = 1
+		cooldownMoveSnake = cooldownMoveMaxSnake
+	}
+	
+	cooldownMoveSnake -= 1
 }
 
 if control{
@@ -89,8 +121,8 @@ if control{
 		diff = 1
 	}
 	
-	hspd = moveX*actualWalkspd/diff
-	vspd = moveY*actualWalkspd/diff
+	hspd = lerp(hspd,moveX*actualWalkspd/diff,lerpVal)
+	vspd = lerp(vspd,moveY*actualWalkspd/diff,lerpVal)
 } else{
 	hspd = 0
 	vspd = 0
