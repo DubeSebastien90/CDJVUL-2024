@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_man",
+  "%Name":"obj_part_wind",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_man",
+  "name":"obj_part_wind",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_man",
-    "path":"sprites/spr_man/spr_man.yy",
+    "name":"spr_wind",
+    "path":"sprites/spr_wind/spr_wind.yy",
   },
   "spriteMaskId":null,
   "visible":true,
