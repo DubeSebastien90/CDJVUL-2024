@@ -16,7 +16,7 @@ alpha = 1
 imageIndex = 0
 
 randomise()
-movementType = round(random(4))
+movementType = 1//round(random(4))
 
 //type 0 - crab
 cooldownCrabe = 0
@@ -24,6 +24,9 @@ axis = 0
 walkspd_crab = 1
 lerpCrab = 0.1
 spr[0] = spr_crabLeg
+z = 0
+gravCrabe = 0.1
+zspd = 0
 
 //type 1 - bélier
 spr[1] = spr_bouc

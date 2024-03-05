@@ -23,14 +23,25 @@ if movementType == 0{
 		if axis > 1{
 			axis = 0
 		}
+		zspd = 2
+	}
+	zspd -= gravCrabe
+	z += zspd
+	if z < 0{
+		z = 0
 	}
 	//mouvement selon l'axe
-	if axis == 0{
-		moveX = press_right - press_left
-	} else {
-		moveY = press_down - press_up
+	if z = 0{
+		if axis == 0{
+			moveX = press_right - press_left
+		} else {
+			moveY = press_down - press_up
+		}
 	}
-	if moveY!=0||moveX!=0{
+	if moveY!=0||moveX!=0||z!=0{
+		if z !=0{
+			cooldownCrabe -= 1
+		}
 		cooldownCrabe -= 1
 	}
 	if cooldownCrabe < 0{
@@ -63,6 +74,11 @@ if movementType == 0{
 	}
 	dashCooldown -= 1
 	dashDurationCooldown -= 1
+	//animation
+	if moveX!= 0{
+		xscale = sign(moveX)
+		obj_man.xscale = -xscale
+	}
 } else if movementType == 2{
 	lerpVal = lerpFish
 	//poisson
@@ -96,7 +112,10 @@ if movementType == 0{
 	//animation
 	xscale = 1 + (zspd/5)
 	yscale = 2-xscale
-	obj_man.xscale = xscale 
+	if hspd!= 0{
+		xscale *= sign(hspd)
+	}
+	obj_man.xscale = -xscale
 	obj_man.yscale = yscale
 	
 } else if movementType = 3{
@@ -151,6 +170,7 @@ if movementType == 0{
 	yfin -= yFinDir
 	cooldownMoveSnake -= 1
 } else if movementType == 4{
+	//taupe
 	if mouse_down{
 		lerpVal = lerpTaupe
 		dirTaupe = point_direction(x,y,mouse_x,mouse_y)
@@ -213,6 +233,7 @@ y += vspd
 
 obj_man.x = x 
 obj_man.y = y - 4 - z
+
 
 //depth
 depth = -bbox_bottom - z
