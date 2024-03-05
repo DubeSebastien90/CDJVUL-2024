@@ -41,8 +41,8 @@ z = 0
 grav = 0.03
 zspd = 0
 diffSpd = 0
-walkspd_fish = 0.5
-lerpFish = 0.03
+walkspd_fish = 0.65
+lerpFish = 0.7
 
 //type 3 - snake
 tileSize = 16
