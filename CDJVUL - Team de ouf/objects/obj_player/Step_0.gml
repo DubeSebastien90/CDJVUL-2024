@@ -91,6 +91,8 @@ if movementType == 0{
 	moveY = prevYSnake
 	lerpVal = lerpSnake
 	if cooldownMoveSnake <= 0{
+		xfin = 0
+		yfin = 0
 		moveX = 0
 		moveY = 0
 		//bouger
@@ -122,10 +124,11 @@ if movementType == 0{
 			cooldownMoveSnake = cooldownMoveMaxSnake
 		//}
 		
-		xfin += xFinDir
-		yfin += yFinDir
+		xFinDir = sign(prevX[length-1]-prevX[length-2])
+		yFinDir = sign(prevY[length-1]-prevY[length-2])
 	}
-	
+	xfin -= xFinDir
+	yfin -= yFinDir
 	cooldownMoveSnake -= 1
 }
 
