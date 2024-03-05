@@ -43,10 +43,18 @@ if movementType == 0{
 			cooldownCrabe -= 1
 		}
 		cooldownCrabe -= 1
+		rot = lerp(rot,dsin(cooldownCrabe*18)*10,0.1)
+		obj_man.manRot = rot
+	} else{
+		cooldownCrabe = 0
+		rot = lerp(rot,0,0.1)
 	}
 	if cooldownCrabe < 0{
 		imageIndex += 1
 		imageIndex = imageIndex%2
+		if axis == 1{
+			imageIndex += 2
+		}
 		cooldownCrabe = 20
 	}
 } else if movementType == 1{
@@ -237,4 +245,4 @@ obj_man.y = y - 4 - z
 
 //depth
 depth = -bbox_bottom - z
-obj_man.depth = depth - 1
+obj_man.depth = depth + 1

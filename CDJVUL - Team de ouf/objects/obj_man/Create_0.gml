@@ -7,6 +7,8 @@ weaponIndex = 0
 
 weapon = 2
 
+manRot = 0
+
 //weapon 0 - sword
 swordReachMin = 10
 swordReachMax = 15
