@@ -17,7 +17,8 @@
     {"name":"Tile sets","order":2,"path":"folders/Tile sets.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"obj_boss","order":5,"path":"objects/obj_boss/obj_boss.yy",},
+    {"name":"obj_enemy_par","order":7,"path":"objects/obj_enemy_par/obj_enemy_par.yy",},
+    {"name":"obj_enemy","order":5,"path":"objects/obj_enemy/obj_enemy.yy",},
     {"name":"obj_game","order":2,"path":"objects/obj_game/obj_game.yy",},
     {"name":"obj_legs","order":1,"path":"objects/obj_legs/obj_legs.yy",},
     {"name":"obj_man","order":4,"path":"objects/obj_man/obj_man.yy",},
