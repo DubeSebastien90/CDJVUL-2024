@@ -46,15 +46,19 @@ lerpFish = 0.03
 //type 3 - snake
 tileSize = 16
 lengthMax = 10
-length = 7
+length = 10
 cooldownMoveMaxSnake = 16
 cooldownMoveSnake = 0
 walkspd_snake = 1
 lerpSnake = 1
 prevXSnake = 0
 prevYSnake = 0
+xfin = 0
+yfin = 0
+xFinDir = 0
+yFinDir = 0
 if movementType == 3{
-	x += 16
+	x += 16*4
 	y -= 8
 }
 for(var i = 0; i < lengthMax; i++){

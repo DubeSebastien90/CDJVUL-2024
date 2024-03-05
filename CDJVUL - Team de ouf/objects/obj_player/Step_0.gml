@@ -6,6 +6,8 @@ press_down = keyboard_check(ord("S"))
 press_space_pressed = keyboard_check_pressed(vk_space)
 press_space =  keyboard_check(vk_space)
 
+press_something = press_up||press_down||press_right||press_left
+
 //mouvement
 var moveX = 0
 var moveY = 0
@@ -92,12 +94,12 @@ if movementType == 0{
 		moveX = 0
 		moveY = 0
 		//bouger
-		for(var i = length - 1; i > 0; i--){
-			if prevX[i] != prevX[i-1] || prevY[i] != prevY[i-1]{
+		//if !(prevY[0] = y && prevX[0] = x){
+			for(var i = length - 1; i > 0; i--){
 				prevX[i] = prevX[i-1]
 				prevY[i] = prevY[i-1]
 			}
-		}
+		//}
 		prevX[0] = x
 		prevY[0] = y
 		moveX = press_right - press_left
@@ -106,8 +108,22 @@ if movementType == 0{
 		}
 		prevXSnake = moveX
 		prevYSnake = moveY
+		for(var i = 0; i < length; i++){
+			if prevX[i] == prevX[0]+tileSize*prevXSnake && prevY[i] == prevY[0]+tileSize*prevYSnake{
+				moveX = 0
+				moveY = 0
+				press_something = false
+				prevXSnake = 0
+				prevYSnake = 0
+			}
+		}
 		actualWalkspd = 1
-		cooldownMoveSnake = cooldownMoveMaxSnake
+		//if press_something{
+			cooldownMoveSnake = cooldownMoveMaxSnake
+		//}
+		
+		xfin += xFinDir
+		yfin += yFinDir
 	}
 	
 	cooldownMoveSnake -= 1
@@ -134,12 +150,14 @@ if place_meeting(x+hspd,y,obj_collision){
 		x += sign(hspd)
 	}
 	hspd = 0
+	//cooldownMoveSnake = 0
 }
 if place_meeting(x,y+vspd,obj_collision){
 	while!place_meeting(x,y+sign(vspd),obj_collision){
 		y += sign(vspd)
 	}
 	vspd = 0
+	//cooldownMoveSnake = 0
 }
 if place_meeting(x+hspd,y+vspd,obj_collision){
 	hspd = 0
