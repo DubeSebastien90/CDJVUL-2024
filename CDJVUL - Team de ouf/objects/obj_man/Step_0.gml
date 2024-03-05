@@ -88,7 +88,6 @@ if weapon == 0{
 		_rot += 360
 		rot += 360
 	}
-	
 	animationCooldown -= 1
 	if mouse_pressed{
 		dirLock = dir - (dureeAtaque*8)
