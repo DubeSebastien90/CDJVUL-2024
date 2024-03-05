@@ -93,8 +93,7 @@ if movementType == 0{
 		moveY = 0
 		//bouger
 		for(var i = length - 1; i > 0; i--){
-			if !(prevX[i] = prevX[i-1] && prevY[i] = prevY[i-1]){
-			if !(prevX[i] = prevX[i-1] && prevY[i] = prevY[i-1]){
+			if prevX[i] != prevX[i-1] || prevY[i] != prevY[i-1]{
 				prevX[i] = prevX[i-1]
 				prevY[i] = prevY[i-1]
 			}
