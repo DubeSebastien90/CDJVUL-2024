@@ -21,7 +21,32 @@ if obj_legs.movementType == 4{
 
 //attaque
 if weapon == 0{
-	weaponX = dcos(dir)*swordReach + x
-	weaponY = -dsin(dir)*swordReach + y - 10
+	if animationSword{
+		dirTrue = lerp(dirTrue,dirLock,0.1)
+		swordReach = lerp(swordReach,swordReachMax,0.1)
+	} else{
+		if dir < 90 && dirTrue > 270{
+			dir += 360
+		}
+		if dir > 270 && dirTrue < 90{
+			dir -= 360
+		}
+		dirTrue = lerp(dirTrue,dir,0.1)
+		if dirTrue > 360 && dir > 360{
+			dirTrue -= 360
+			dir -= 360
+		}
+		if dirTrue < 0 && dir < 0{
+			dirTrue += 360
+			dir += 360
+		}
+		swordReach = lerp(swordReach,swordReachMin,0.1)
+	}
+	weaponX = dcos(dirTrue)*swordReach + x
+	weaponY = -dsin(dirTrue)*swordReach + y - 9
 	rot = dir - 90
+	if mouse_pressed{
+		dirLock = dir
+		animationSword = true
+	}
 }
