@@ -13,16 +13,20 @@ rot = 0
 xscale = 1
 yscale = 1
 alpha = 1
+imageIndex = 0
 
 randomise()
 movementType = round(random(4))
 
 //type 0 - crab
+cooldownCrabe = 0
 axis = 0
 walkspd_crab = 1
 lerpCrab = 0.1
+spr[0] = spr_crabLeg
 
 //type 1 - bélier
+spr[1] = spr_bouc
 dashCooldownMax = 30
 dashCooldown = 0 
 dashDuration = 20
@@ -34,6 +38,7 @@ walkspd_dashBelier = 2.2
 lerpBelier = 0.1
 
 //type 2 - poisson
+spr[2] = spr_poisson
 dirX = 0
 dirY = 0
 dir = 0
@@ -45,6 +50,7 @@ walkspd_fish = 0.65
 lerpFish = 0.7
 
 //type 3 - snake
+spr[3] = spr_snake
 tileSize = 16
 lengthMax = 10
 length = 10
@@ -68,6 +74,7 @@ for(var i = 0; i < lengthMax; i++){
 }
 
 //type 4 - taupe
+spr[4] = spr_taupe
 dirTaupe = 0
 walkspd_taupe = 1.2
 lerpTaupe = 0.1
@@ -75,3 +82,5 @@ cooldownPartDirt = 0
 
 //type 5 - girafe ???
 
+
+sprite_index = spr[movementType]

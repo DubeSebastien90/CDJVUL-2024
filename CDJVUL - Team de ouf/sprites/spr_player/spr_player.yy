@@ -31,8 +31,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"gr_spr_legs",
+    "path":"folders/Sprites/gr_spr_legs.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
