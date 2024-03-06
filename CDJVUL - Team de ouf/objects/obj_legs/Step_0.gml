@@ -87,6 +87,14 @@ if movementType == 0{
 		xscale = sign(moveX)
 		obj_man.xscale = -xscale
 	}
+	if moveY!=0||moveX!=0{
+		cooldownCrabe -= 1
+	}
+	if cooldownCrabe < 0{
+		imageIndex += 1
+		imageIndex = imageIndex%2
+		cooldownCrabe = 20
+	}
 } else if movementType == 2{
 	lerpVal = lerpFish
 	//poisson
@@ -144,11 +152,13 @@ if movementType == 0{
 				snakePiece[i].depth = -prevY[i]-8
 				snakePiece[i].x = prevX[i] 
 				snakePiece[i].y = prevY[i]
+				//snakePiece[i].index = index[i]
 			}
 		//}
 		prevX[0] = x
 		prevY[0] = y
 		snakePiece[0].depth = -y-8
+		//snakePiece[length].depth = -y-9
 		snakePiece[0].x = x 
 		snakePiece[0].y = y
 		moveX = press_right - press_left

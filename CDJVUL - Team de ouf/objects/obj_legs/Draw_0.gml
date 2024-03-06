@@ -14,9 +14,10 @@ if movementType == 3{
 	snakePiece[length].x = x 
 	snakePiece[length]. y = y 
 	snakePiece[length].depth = depth + 16
+	snakePiece[length].index = 6
 	//queue
 	snakePiece[length-1].x = prevX[length-1]+xfin
-	snakePiece[length-1]. y = prevY[length-1]+yfin
+	snakePiece[length-1]. y	= prevY[length-1]+yfin
 } else{
 	//autres
 	draw_sprite_ext(spr[movementType],imageIndex,x,y-z,xscale,yscale,rot,c_white,alpha)

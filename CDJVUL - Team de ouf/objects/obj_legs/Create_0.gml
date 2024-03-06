@@ -16,7 +16,7 @@ alpha = 1
 imageIndex = 0
 
 randomise()
-movementType = 0//round(random(4))
+movementType = 3//choose(0,1,2,3,4)
 
 //type 0 - crab
 cooldownCrabe = 0
@@ -39,6 +39,7 @@ dashY = 0
 walkspd_belier = 0.6
 walkspd_dashBelier = 2.2
 lerpBelier = 0.1
+
 
 //type 2 - poisson
 spr[2] = spr_poisson
@@ -75,7 +76,9 @@ for(var i = 0; i < lengthMax + 1; i++){
 	prevX[i] = x - 16*i
 	prevY[i] = y
 	snakePiece[i] = instance_create_depth(x-16*i,7,depth,obj_bout_serpent)
+	snakePiece[i].index = 0
 }
+snakePiece[length-1].index = 11
 
 //type 4 - taupe
 spr[4] = spr_taupe

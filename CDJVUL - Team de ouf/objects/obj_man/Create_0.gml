@@ -5,13 +5,13 @@ xscale = 1
 yscale = 1
 weaponIndex = 0
 
-weapon = 2
+weapon = choose(0,1)
 
 manRot = 0
 
 //weapon 0 - sword
 swordReachMin = 10
-swordReachMax = 15
+swordReachMax = 20
 swordReach = swordReachMin
 dir = 0
 weaponX = x
