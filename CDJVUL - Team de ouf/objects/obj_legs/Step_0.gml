@@ -154,10 +154,13 @@ if movementType == 0{
 				snakePiece[i].y = prevY[i]
 				//snakePiece[i].index = index[i]
 			}
+			for(var i = length-1; i > 0 ;i--){
+				snakePiece[i].index = getIndexSerpent(i)
+			}
 		//}
 		prevX[0] = x
 		prevY[0] = y
-		snakePiece[0].depth = -y-8
+		snakePiece[0].depth = -y+8
 		//snakePiece[length].depth = -y-9
 		snakePiece[0].x = x 
 		snakePiece[0].y = y
@@ -250,7 +253,7 @@ x += hspd
 y += vspd
 
 obj_man.x = x 
-obj_man.y = y - 4 - z
+obj_man.y = y - 4 - z 
 
 
 //depth

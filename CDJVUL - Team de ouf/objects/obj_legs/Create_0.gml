@@ -78,7 +78,24 @@ for(var i = 0; i < lengthMax + 1; i++){
 	snakePiece[i] = instance_create_depth(x-16*i,7,depth,obj_bout_serpent)
 	snakePiece[i].index = 0
 }
+snakePiece[0].sprite_index = noone
 snakePiece[length-1].index = 11
+function getIndexSerpent(_i){
+	var _index = 0
+	if _i == 0{
+		
+	} else if _i == length - 1{
+		_index = 2
+	} else {
+		//côté
+		with(snakePiece[_i]){
+			if (place_meeting(x,y - 1,obj_legs.snakePiece[_i+1]) && place_meeting(x,y + 1,obj_legs.snakePiece[_i-1])) || (place_meeting(x,y + 1,obj_legs.snakePiece[_i+1]) && place_meeting(x,y - 1,obj_legs.snakePiece[_i-1])){
+				_index = 1
+			}
+		}
+	}
+	return _index
+}
 
 //type 4 - taupe
 spr[4] = spr_taupe

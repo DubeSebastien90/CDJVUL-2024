@@ -13,7 +13,7 @@ if movementType == 3{
 	//tête
 	snakePiece[length].x = x 
 	snakePiece[length]. y = y 
-	snakePiece[length].depth = depth + 16
+	snakePiece[length].depth = depth + 8
 	snakePiece[length].index = 6
 	//queue
 	snakePiece[length-1].x = prevX[length-1]+xfin
