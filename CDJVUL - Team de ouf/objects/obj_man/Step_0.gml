@@ -171,10 +171,42 @@ if weapon == 0{
 		dirTrue += 360
 		dir += 360
 	}
-	weaponX = dcos(dirTrue)*boomerangReach + x
-	weaponY = -dsin(dirTrue)*boomerangReach + y - 9
-	rot = dir
+	if viser = true{
+		rot = dir
+		weaponX = dcos(dirTrue)*boomerangReach + x
+		weaponY = -dsin(dirTrue)*boomerangReach + y - 9
+	} else{
+		rot += 10
+		spdBoom -= spdDecrease
+		if spdBoom < 0 && reviens = false{
+			reviens = true
+			spdDecrease *= -1
+		}
+		if reviens = true{
+			dirThrow = point_direction(weaponX,weaponY,x,y-9)
+			if point_distance(x,y-9,obj_boomerang.x,obj_boomerang.y) < 5{
+				viser = true
+				_boomeranReach = 15
+				boomerangReach = 0
+				obj_boomerang.x = x 
+				obj_boomerang.y = y-9
+			}
+		}
+		weaponX += dcos(dirThrow)*spdBoom
+		weaponY += -dsin(dirThrow)*spdBoom
+	}
+
 	
+	if mouse_pressed{
+		viser = false
+		reviens = false
+		spdBoom = spdInitiale
+		dirThrow = dir
+		spdDecrease = _spdDecrease
+		_boomerangReach = 0
+	}
+	
+	boomerangReach = lerp(boomerangReach,_boomeranReach,0.1)
 	obj_boomerang.image_angle = rot
 	obj_boomerang.x = weaponX
 	obj_boomerang.y = weaponY

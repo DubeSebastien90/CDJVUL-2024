@@ -16,7 +16,7 @@ alpha = 1
 imageIndex = 0
 
 randomise()
-movementType = 3//choose(0,1,2,3,4)
+movementType = choose(0,1,2,4)
 
 //type 0 - crab
 cooldownCrabe = 0
@@ -77,21 +77,41 @@ for(var i = 0; i < lengthMax + 1; i++){
 	prevY[i] = y
 	snakePiece[i] = instance_create_depth(x-16*i,7,depth,obj_bout_serpent)
 	snakePiece[i].index = 0
+	snakePiece[i]._i = i
 }
 snakePiece[0].sprite_index = noone
 snakePiece[length-1].index = 11
 function getIndexSerpent(_i){
 	var _index = 0
-	if _i == 0{
-		
+	if _i == length{
+		//torse
+		if snakePiece[0].y == snakePiece[length].y{
+			if prevXSnake == -1{
+				_index = 8
+			} else _index = 6
+		} else{
+			if prevYSnake == -1{
+				_index = 9
+			} else _index = 7
+		}
 	} else if _i == length - 1{
-		_index = 2
+		//queue
 	} else {
+		var val = 0
+		if _i == 0{
+			val = length
+		} else val = _i-1
 		//côté
-		with(snakePiece[_i]){
-			if (place_meeting(x,y - 1,obj_legs.snakePiece[_i+1]) && place_meeting(x,y + 1,obj_legs.snakePiece[_i-1])) || (place_meeting(x,y + 1,obj_legs.snakePiece[_i+1]) && place_meeting(x,y - 1,obj_legs.snakePiece[_i-1])){
-				_index = 1
-			}
+		if snakePiece[_i].x == snakePiece[_i+1].x && snakePiece[_i].x == snakePiece[val].x{
+			_index = 1
+		} else if snakePiece[_i].x == snakePiece[_i+1].x && snakePiece[_i].x < snakePiece[val].x{
+			_index = 5
+		} else if snakePiece[_i].x == snakePiece[_i+1].x && snakePiece[_i].x > snakePiece[val].x{
+			_index = 3
+		} else if snakePiece[_i].y == snakePiece[_i+1].y && snakePiece[_i].y > snakePiece[val].y{
+			_index = 4
+		} else if snakePiece[_i].y == snakePiece[_i+1].y && snakePiece[_i].y < snakePiece[val].y{
+			_index = 2
 		}
 	}
 	return _index

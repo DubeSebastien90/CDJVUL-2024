@@ -5,7 +5,7 @@ xscale = 1
 yscale = 1
 weaponIndex = 0
 
-weapon = choose(0,1)
+weapon = 2
 
 manRot = 0
 
@@ -39,6 +39,14 @@ if weapon == 1{
 
 //weapon 2 - boomerang
 boomerangReach = 15
+_boomeranReach = 15
+reviens = false
+viser = true
+spdInitiale = 4
+spdDecrease = 0.1
+_spdDecrease = 0.1
+dirThrow = 0
+spdBoom = 0
 if weapon == 2{
 	instance_create_depth(x,y,depth,obj_boomerang)
 }

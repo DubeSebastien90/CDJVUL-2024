@@ -146,16 +146,12 @@ if movementType == 0{
 		moveY = 0
 		//bouger
 		//if !(prevY[0] = y && prevX[0] = x){
-			for(var i = length - 1; i > 0; i--){
+			for(var i = length - 1; i > 0; i--){			
 				prevX[i] = prevX[i-1]
 				prevY[i] = prevY[i-1]
-				snakePiece[i].depth = -prevY[i]-8
 				snakePiece[i].x = prevX[i] 
 				snakePiece[i].y = prevY[i]
 				//snakePiece[i].index = index[i]
-			}
-			for(var i = length-1; i > 0 ;i--){
-				snakePiece[i].index = getIndexSerpent(i)
 			}
 		//}
 		prevX[0] = x
@@ -186,6 +182,9 @@ if movementType == 0{
 		
 		xFinDir = sign(prevX[length-1]-prevX[length-2])
 		yFinDir = sign(prevY[length-1]-prevY[length-2])
+	}
+	for(var i = length; i > 0 ;i--){
+		snakePiece[i].index = getIndexSerpent(i)
 	}
 	xfin -= xFinDir
 	yfin -= yFinDir
@@ -254,7 +253,6 @@ y += vspd
 
 obj_man.x = x 
 obj_man.y = y - 4 - z 
-
 
 //depth
 depth = -bbox_bottom - z
