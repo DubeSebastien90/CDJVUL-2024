@@ -210,4 +210,42 @@ if weapon == 0{
 	obj_boomerang.image_angle = rot
 	obj_boomerang.x = weaponX
 	obj_boomerang.y = weaponY
+} else if weapon == 3{
+	//choisir direction
+	if dir < 90 && dirTrue > 270{
+		dir += 360
+	}
+	if dir > 270 && dirTrue < 90{
+		dir -= 360
+	}
+	dirTrue = lerp(dirTrue,dir,0.1)
+	if dirTrue > 360 && dir > 360{
+		dirTrue -= 360
+		dir -= 360
+	}
+	if dirTrue < 0 && dir < 0{
+		dirTrue += 360
+		dir += 360
+	}
+	weaponX = dcos(dirTrue)*bombReach + x
+	weaponY = -dsin(dirTrue)*bombReach + y - 9
+	
+	if cooldownRechargeBomb == 0 && lanceBombe = true{
+		lanceBombe = false
+		instance_create_depth(x,y,depth-1,obj_bomb)
+	}
+	
+	if lanceBombe = false{
+	obj_bomb.x = weaponX
+	obj_bomb.y = weaponY
+	}
+	
+	if mouse_pressed && lanceBombe = false{
+		lanceBombe = true
+		obj_bomb.lance = true
+		obj_bomb.dir = dir
+	}
+	
+	
+	cooldownRechargeBomb -= 1
 }

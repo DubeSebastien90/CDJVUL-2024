@@ -5,7 +5,7 @@ xscale = 1
 yscale = 1
 weaponIndex = 0
 
-weapon = 2
+weapon = 3//choose(0,1,2,3)
 
 manRot = 0
 
@@ -49,4 +49,12 @@ dirThrow = 0
 spdBoom = 0
 if weapon == 2{
 	instance_create_depth(x,y,depth,obj_boomerang)
+}
+
+//weapon 3 - bomb
+bombReach = 15
+cooldownRechargeBomb = 0
+lanceBombe = false
+if weapon == 3{
+	instance_create_depth(x,y,depth,obj_bomb)
 }
