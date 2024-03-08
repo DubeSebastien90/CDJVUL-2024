@@ -236,8 +236,10 @@ if weapon == 0{
 	}
 	
 	if lanceBombe = false{
-	obj_bomb.x = weaponX
-	obj_bomb.y = weaponY
+		if instance_exists(obj_bomb){
+			obj_bomb.x = weaponX
+			obj_bomb.y = weaponY
+		}
 	}
 	
 	if mouse_pressed && lanceBombe = false{

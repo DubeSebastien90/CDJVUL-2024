@@ -5,7 +5,7 @@ xscale = 1
 yscale = 1
 weaponIndex = 0
 
-weapon = 3//choose(0,1,2,3)
+weapon = choose(0,1,2,3)
 
 manRot = 0
 

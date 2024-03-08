@@ -20,6 +20,10 @@ if movementType == 3{
 	snakePiece[length-1]. y	= prevY[length-1]+yfin
 } else{
 	//autres
-	draw_sprite_ext(spr[movementType],imageIndex,x,y-z,xscale,yscale,rot,c_white,alpha)
+	if movementType == 4{
+		draw_sprite_ext(spr[movementType],imageIndex,x,y,xscale,yscale,rot,c_white,alpha)
+	} else{
+		draw_sprite_ext(spr[movementType],imageIndex,x,y-z,xscale,yscale,rot,c_white,alpha)
+	}
 }
 

@@ -192,23 +192,36 @@ if movementType == 0{
 } else if movementType == 4{
 	//taupe
 	if mouse_down{
-		lerpVal = lerpTaupe
+		imageIndex = 0
 		dirTaupe = point_direction(x,y,mouse_x,mouse_y)
 		actualWalkspd = walkspd_taupe
 		moveX = dcos(dirTaupe)
 		moveY = -dsin(dirTaupe)
-		alpha = 0.2
 		if cooldownPartDirt < 0{
 			cooldownPartDirt = 2
-			instance_create_depth(x+random_range(-6,6),y+random_range(-6,6),2,obj_part_dirt)
+			if point_distance(x,y,mouse_x,mouse_y) > 5{
+				instance_create_depth(x+random_range(-6,6),y+random_range(-6,6)+2,2,obj_part_dirt)
+			}
 		}
 		cooldownPartDirt -= 1
-		z = lerp(z,-10,0.1)
+		if z != -7{
+			lerpVal = lerpTaupe
+			z = -7
+			repeat(10){
+				instance_create_depth(x,y,obj_man.depth - 20,obj_part_Expl)
+			}
+		}
 		obj_man.canAttack = false
 	} else {
+		imageIndex = 1
 		cooldownPartDirt = 0
-		alpha = 1
-		z = lerp(z,0,0.1)
+		lerpVal = 0.3
+		if z != 0{
+			z = 0
+			repeat(10){
+				instance_create_depth(x,y,depth - 20,obj_part_Expl)
+			}
+		}
 		obj_man.canAttack = true
 	}
 }
