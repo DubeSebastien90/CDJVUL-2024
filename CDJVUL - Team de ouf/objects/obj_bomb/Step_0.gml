@@ -1,10 +1,18 @@
 //y = prevY
 //prevY = y
-if mort || spd < 0{
-	spd = 0
-	vspd = 0
+if spd < 0{
+	if !place_meeting(x,y,obj_can_land){
+		mort = true
+	}
+	if !mort{
+		spd = 0
+		vspd = 0
+		rotChange = 0
+		frct = 0
+	} else{
+		image_alpha = lerp(image_alpha,0,0.1)
+	}
 	image_speed = 1
-	mort = true
 } else {
 	if lance{
 		spd -= frct

@@ -10,7 +10,9 @@ prevY = y
 lance = false
 
 function explosion(){
-	screenShake(3,10)
+	if !mort{
+		screenShake(3,10)
+	}
 	instance_destroy()
 	obj_man.cooldownRechargeBomb = 30
 }

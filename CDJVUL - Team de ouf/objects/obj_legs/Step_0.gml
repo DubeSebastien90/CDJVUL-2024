@@ -17,7 +17,7 @@ if movementType == 0{
 	lerpVal = lerpCrab
 	actualWalkspd = walkspd_crab
 	//crabe
-	if press_space_pressed{
+	if press_space_pressed && z = 0{
 		//changer d'axe
 		axis += 1
 		if axis > 1{

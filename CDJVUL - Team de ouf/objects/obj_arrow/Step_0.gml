@@ -1,8 +1,15 @@
 
-if z < 0  || mort{
-	spd = 0
-	vspd = 0
-	image_alpha = lerp(image_alpha,0,0.01)
+if z < 0{
+	if !place_meeting(x,y,obj_can_land){
+		mort = true
+	}
+	if !mort{
+		spd = 0
+		vspd = 0
+		image_alpha = lerp(image_alpha,0,0.01)
+	} else {
+		image_alpha = lerp(image_alpha,0,0.1)
+	}
 	if image_alpha< 0.05{
 		instance_destroy()
 	}
