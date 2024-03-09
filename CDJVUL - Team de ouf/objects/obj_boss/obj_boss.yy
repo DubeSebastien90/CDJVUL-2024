@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_fond",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_boss",
+  "eventList":[],
   "managed":true,
-  "name":"obj_fond",
+  "name":"obj_boss",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_boss_idle",
+    "path":"sprites/spr_boss_idle/spr_boss_idle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
