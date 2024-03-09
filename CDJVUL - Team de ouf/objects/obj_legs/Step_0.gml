@@ -23,7 +23,7 @@ if movementType == 0{
 		if axis > 1{
 			axis = 0
 		}
-		zspd = 2
+		zspd = 1.3
 	}
 	zspd -= gravCrabe
 	z += zspd
