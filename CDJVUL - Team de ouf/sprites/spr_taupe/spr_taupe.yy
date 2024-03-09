@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_taupe",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":18,
   "bbox_left":5,
   "bbox_right":20,
-  "bbox_top":5,
+  "bbox_top":11,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

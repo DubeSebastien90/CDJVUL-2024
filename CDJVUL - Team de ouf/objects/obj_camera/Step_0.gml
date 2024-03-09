@@ -2,8 +2,8 @@
 //update destination
 if (instance_exists(follow)) 
 {
-	xTo = follow.posX;
-	yTo = follow.posY;
+	xTo = follow.x;
+	yTo = y
 }
 
 //offsetX = lerp(offsetX,follow.hspd*15,0.01)

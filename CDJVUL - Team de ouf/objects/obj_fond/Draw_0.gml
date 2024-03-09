@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_background,0,-100,-100,room_width+100,room_height+100,0,c_white,1)

@@ -1,10 +1,15 @@
 if movementType == 2{
 	//fish shadow
-	draw_sprite_ext(spr_shadow,0,x,y+sprite_get_height(sprite_index)/2,1,1,0,c_white,0.3)
+	draw_sprite_ext(spr_shadow,0,x,y+8,1,1,0,c_white,0.3)
 }else if movementType == 0{
 	//crab shadow
-	var _diff = 0//axis*90
-	draw_sprite_ext(spr_shadow,0,x,y+5,1,1,_diff,c_white,0.3)	
+	var _diff = 1//axis*90
+	if axis == 1{
+		_diff = 0.7
+	}
+	draw_sprite_ext(spr_shadow,0,x,y+5,_diff,1,0,c_white,0.3)	
+} else if movementType == 1{
+	draw_sprite_ext(spr_shadow,0,x,y+13,1.4,1,0,c_white,0.3)	
 }
 
 //dessiner le monstre

@@ -1,6 +1,6 @@
 //initialisation
 y = room_height/2
-x = room_width/2
+x = 336/2
 
 vspd = 0
 hspd = 0
@@ -16,7 +16,7 @@ alpha = 1
 imageIndex = 0
 
 randomise()
-movementType = 4//choose(0,1,2,4)
+movementType = choose(0,1,2,4)
 
 //type 0 - crab
 cooldownCrabe = 0

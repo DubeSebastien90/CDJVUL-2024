@@ -1,2 +1,4 @@
-spd = 0
-mort = true
+if lance = true{
+	spd = 0
+	mort = true
+}

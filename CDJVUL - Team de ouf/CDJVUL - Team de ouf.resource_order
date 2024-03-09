@@ -29,6 +29,7 @@
     {"name":"obj_camera","order":11,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_enemy_par","order":8,"path":"objects/obj_enemy_par/obj_enemy_par.yy",},
     {"name":"obj_enemy","order":7,"path":"objects/obj_enemy/obj_enemy.yy",},
+    {"name":"obj_fond","order":13,"path":"objects/obj_fond/obj_fond.yy",},
     {"name":"obj_game","order":2,"path":"objects/obj_game/obj_game.yy",},
     {"name":"obj_man","order":1,"path":"objects/obj_man/obj_man.yy",},
     {"name":"obj_part_dirt","order":3,"path":"objects/obj_part_dirt/obj_part_dirt.yy",},
@@ -51,6 +52,7 @@
     {"name":"spr_snake","order":4,"path":"sprites/spr_snake/spr_snake.yy",},
     {"name":"spr_sword","order":2,"path":"sprites/spr_sword/spr_sword.yy",},
     {"name":"spr_taupe","order":5,"path":"sprites/spr_taupe/spr_taupe.yy",},
+    {"name":"spr_tile_world","order":17,"path":"sprites/spr_tile_world/spr_tile_world.yy",},
     {"name":"spr_wind","order":8,"path":"sprites/spr_wind/spr_wind.yy",},
   ],
 }

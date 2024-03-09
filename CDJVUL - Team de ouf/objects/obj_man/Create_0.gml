@@ -58,3 +58,7 @@ lanceBombe = false
 if weapon == 3{
 	instance_create_depth(x,y,depth,obj_bomb)
 }
+
+if obj_legs.movementType == 1{
+	xscale = -1
+}
