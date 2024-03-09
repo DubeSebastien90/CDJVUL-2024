@@ -39,6 +39,7 @@
     {"name":"obj_part_Expl","order":12,"path":"objects/obj_part_Expl/obj_part_Expl.yy",},
     {"name":"obj_part_wind","order":5,"path":"objects/obj_part_wind/obj_part_wind.yy",},
     {"name":"screenShake","order":1,"path":"scripts/screenShake/screenShake.yy",},
+    {"name":"spr_affiche","order":15,"path":"sprites/spr_affiche/spr_affiche.yy",},
     {"name":"spr_arrow","order":1,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_background","order":1,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_bomb","order":4,"path":"sprites/spr_bomb/spr_bomb.yy",},
@@ -59,6 +60,5 @@
     {"name":"spr_taupe","order":5,"path":"sprites/spr_taupe/spr_taupe.yy",},
     {"name":"spr_tile_world","order":10,"path":"sprites/spr_tile_world/spr_tile_world.yy",},
     {"name":"spr_wind","order":6,"path":"sprites/spr_wind/spr_wind.yy",},
-    {"name":"spr_affiche","order":15,"path":"sprites/spr_affiche/spr_affiche.yy",},
   ],
 }

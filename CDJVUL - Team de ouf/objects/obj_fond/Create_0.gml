@@ -15,6 +15,6 @@ for (var i = 0; i < nbClouds; i++){
 	side *= -1
 	cloudIndex[i] = choose(0,1,2,3)
 	cloudAlpha[i] = random_range(0.7,0.9)
-	cloudScale[i] = random_range(1.3,1.5)
+	cloudScale[i] = random_range(1.7,2)
 	cloudSide[i] = choose(-1,1)
 }
