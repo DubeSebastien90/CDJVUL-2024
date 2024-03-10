@@ -129,8 +129,10 @@ cooldownPartDirt = 0
 
 sprite_index = spr[movementType]
 bossStart = false
+xToGo = 0
 function startBoss(){
+	xToGo = x + 40
+	control = false
 	bossStart = true
-	obj_boss.active = true
 	obj_camera.camBoss = true
 }

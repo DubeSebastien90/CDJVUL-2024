@@ -258,8 +258,12 @@ if place_meeting(x+hspd,y+vspd,obj_collision){
 	vspd = 0
 }
 
-x += hspd
-y += vspd
+if !(bossStart == true && !control){
+	x += hspd
+	y += vspd
+} else{
+	x = lerp(x,xToGo,0.1)
+}
 
 obj_man.x = x 
 obj_man.y = y - 4 - z 
