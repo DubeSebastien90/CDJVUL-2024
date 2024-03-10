@@ -12,3 +12,11 @@ textTutoLegs[0] = "Crab\nYou can only move in two directions with WASD, but you 
 textTutoLegs[1] = "Lama\nYou are incredibly slow, but you can dash to avoid projectiles with spacebar. Move with WASD."
 textTutoLegs[2] = "Fish\nYou can only change direction when you are on the ground using WASD, but it's not very effective..."
 textTutoLegs[4] = "Worm\nYou can dig underground to move by pressing space and using WASD, but you can only attack while out of the ground."
+
+enum states {
+	IDLE,
+	APPROACHING,
+	MOVE,
+	ATTACK,
+	DEAD
+}
