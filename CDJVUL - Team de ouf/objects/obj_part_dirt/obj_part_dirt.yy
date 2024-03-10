@@ -10,8 +10,8 @@
   "name":"obj_part_dirt",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"gr-obj_part",
+    "path":"folders/Objets/gr-obj_part.yy",
   },
   "parentObjectId":null,
   "persistent":false,

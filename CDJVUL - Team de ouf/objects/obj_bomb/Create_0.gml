@@ -17,11 +17,19 @@ function explosion(){
 		with obj_enemy_par {
 			if distance_to_object(moi) <= 25 {
 				hp -= round((1 - (distance_to_object(moi) / 25)) * 60)
+				var _dmg =  round((1 - (distance_to_object(moi) / 25)) * 60)
+				with(instance_create_depth(x,y,-550,obj_textShow)){
+					text = string(_dmg)
+				}
 			}
 		}
 		with obj_man {
 			if distance_to_object(moi) <= 10 {
 				hp -= 15
+				with(instance_create_depth(x,y,-550,obj_textShow)){
+					text = string(15)
+					color = c_red
+				}
 			}
 		}
 	}
