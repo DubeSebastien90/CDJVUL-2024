@@ -30,7 +30,7 @@ zspd = 0
 
 //type 1 - bélier
 spr[1] = spr_bouc
-dashCooldownMax = 30
+dashCooldownMax = 60
 dashCooldown = 0 
 dashDuration = 20
 dashDurationCooldown = 0

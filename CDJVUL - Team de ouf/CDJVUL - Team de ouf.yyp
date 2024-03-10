@@ -41,6 +41,7 @@
   },
   "name":"CDJVUL - Team de ouf",
   "resources":[
+    {"id":{"name":"fnt_pixel","path":"fonts/fnt_pixel/fnt_pixel.yy",},},
     {"id":{"name":"obj_arc","path":"objects/obj_arc/obj_arc.yy",},},
     {"id":{"name":"obj_arrow","path":"objects/obj_arrow/obj_arrow.yy",},},
     {"id":{"name":"obj_bomb","path":"objects/obj_bomb/obj_bomb.yy",},},

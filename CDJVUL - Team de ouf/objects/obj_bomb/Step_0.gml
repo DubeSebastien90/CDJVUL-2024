@@ -3,6 +3,7 @@
 if spd < 0{
 	if !place_meeting(x,y,obj_can_land){
 		mort = true
+		depth = 25
 	}
 	if !mort{
 		spd = 0

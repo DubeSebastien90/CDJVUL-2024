@@ -66,12 +66,10 @@ if movementType == 0{
 		moveY = press_down - press_up
 		actualWalkspd = walkspd_belier
 		alpha = 1
-		obj_man.canAttack = true
 	} else {
 		moveX = dashX
 		moveY = dashY
 		actualWalkspd = walkspd_dashBelier
-		obj_man.canAttack = false
 	}
 	if press_space_pressed && dashCooldown <= 0{
 		dashDurationCooldown = dashDuration
