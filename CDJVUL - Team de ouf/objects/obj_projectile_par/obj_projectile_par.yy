@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_projectile_par",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_enemy_par","path":"objects/obj_enemy_par/obj_enemy_par.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_projectile_par",
   "overriddenProperties":[],
