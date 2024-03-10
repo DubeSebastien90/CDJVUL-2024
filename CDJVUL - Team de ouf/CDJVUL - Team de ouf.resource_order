@@ -38,7 +38,6 @@
     {"name":"obj_part_dirt","order":3,"path":"objects/obj_part_dirt/obj_part_dirt.yy",},
     {"name":"obj_part_Expl","order":12,"path":"objects/obj_part_Expl/obj_part_Expl.yy",},
     {"name":"obj_part_wind","order":5,"path":"objects/obj_part_wind/obj_part_wind.yy",},
-    {"name":"obj_projectile_par","order":5,"path":"objects/obj_projectile_par/obj_projectile_par.yy",},
     {"name":"screenShake","order":1,"path":"scripts/screenShake/screenShake.yy",},
     {"name":"spr_affiche","order":15,"path":"sprites/spr_affiche/spr_affiche.yy",},
     {"name":"spr_arrow","order":1,"path":"sprites/spr_arrow/spr_arrow.yy",},

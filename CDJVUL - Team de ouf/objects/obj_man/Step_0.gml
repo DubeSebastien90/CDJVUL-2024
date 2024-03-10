@@ -130,6 +130,7 @@ if weapon == 0{
 		with(instance_create_depth(weaponX,weaponY,depth-1,obj_arrow)){
 			dir = moi.dir
 			spd = (moi.bowState - 0.5)*0.9
+			dmg = moi.bowState * 10
 		}
 		bowState = 0
 	}
