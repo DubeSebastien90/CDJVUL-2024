@@ -9,19 +9,7 @@ press_something = press_up||press_down||press_right||press_left
 
 cote = sign(mouse_x-x) 
 
-if obj_legs.movementType == 4{
-	mouse_down = keyboard_check(vk_space) && canAttack
-	mouse_pressed = keyboard_check_pressed(vk_space) && canAttack
-	if press_something{
-		dir = point_direction(0,0,press_right-press_left,press_down-press_up)
-	}
-	cote = 1
-	if dir > 90 && dir < 270{ 
-		cote = -1
-	}
-} else {
-	dir = point_direction(x,y-8,mouse_x,mouse_y)
-}
+dir = point_direction(x,y-8,mouse_x,mouse_y)
 
 //attaque
 if weapon == 0{
