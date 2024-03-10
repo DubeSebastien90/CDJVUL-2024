@@ -1,10 +1,10 @@
-
 if z < 0{
 	if !place_meeting(x,y,obj_can_land){
 		mort = true
 		depth = 25
 	}
 	if !mort{
+		onGround = true
 		spd = 0
 		vspd = 0
 		image_alpha = lerp(image_alpha,0,0.01)

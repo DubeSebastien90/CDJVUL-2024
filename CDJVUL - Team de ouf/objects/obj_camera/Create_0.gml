@@ -18,3 +18,5 @@ offsetY = 0
 posX = x
 posY = y
 transition = false
+
+camBoss = false
