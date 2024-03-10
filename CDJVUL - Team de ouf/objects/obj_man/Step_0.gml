@@ -129,7 +129,7 @@ if weapon == 0{
 		var moi = self
 		with(instance_create_depth(weaponX,weaponY,depth-1,obj_arrow)){
 			dir = moi.dir
-			spd = (moi.bowState - 1.5)*0.8
+			spd = (moi.bowState - 0.5)*0.9
 		}
 		bowState = 0
 	}
