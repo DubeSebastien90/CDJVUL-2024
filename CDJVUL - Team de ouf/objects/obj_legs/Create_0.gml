@@ -135,4 +135,9 @@ function startBoss(){
 	control = false
 	bossStart = true
 	obj_camera.camBoss = true
+	with(obj_door){
+		if doorId == 2{
+			open = false
+		}
+	}
 }

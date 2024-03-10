@@ -3,6 +3,12 @@ global.mp_grid = 0
 x = 336/2
 y = 26
 
+//wave
+nb_ennemies = 3
+waveState = 0
+
+
+
 textTutoArme[0] = "Sword\nSwing your sword at nearby ennemies by clicking the left mouse button."
 textTutoArme[1] = "Bow\nCharge you bow by pressing the left mouse button to make your arrows more powerfull."
 textTutoArme[2] = "Boomerang\nSome people may say it looks like a common yellow fruit and they might be right. Throw it with the left mouse button."

@@ -31,6 +31,7 @@
     {"name":"obj_bout_serpent","order":2,"path":"objects/obj_bout_serpent/obj_bout_serpent.yy",},
     {"name":"obj_camera","order":11,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_can_land","order":14,"path":"objects/obj_can_land/obj_can_land.yy",},
+    {"name":"obj_door","order":17,"path":"objects/obj_door/obj_door.yy",},
     {"name":"obj_eclair","order":5,"path":"objects/obj_eclair/obj_eclair.yy",},
     {"name":"obj_enemy_par","order":8,"path":"objects/obj_enemy_par/obj_enemy_par.yy",},
     {"name":"obj_enemy","order":7,"path":"objects/obj_enemy/obj_enemy.yy",},
@@ -63,5 +64,6 @@
     {"name":"spr_taupe","order":5,"path":"sprites/spr_taupe/spr_taupe.yy",},
     {"name":"spr_tile_world","order":10,"path":"sprites/spr_tile_world/spr_tile_world.yy",},
     {"name":"spr_wind","order":6,"path":"sprites/spr_wind/spr_wind.yy",},
+    {"name":"spr_door","order":16,"path":"sprites/spr_door/spr_door.yy",},
   ],
 }

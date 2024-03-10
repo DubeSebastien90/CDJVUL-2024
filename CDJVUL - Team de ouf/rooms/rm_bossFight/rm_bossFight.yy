@@ -40,6 +40,9 @@
     {"name":"inst_428918C2","path":"rooms/rm_bossFight/rm_bossFight.yy",},
     {"name":"inst_50CC98CE","path":"rooms/rm_bossFight/rm_bossFight.yy",},
     {"name":"inst_17324D25","path":"rooms/rm_bossFight/rm_bossFight.yy",},
+    {"name":"inst_32D32EAB","path":"rooms/rm_bossFight/rm_bossFight.yy",},
+    {"name":"inst_315557F3","path":"rooms/rm_bossFight/rm_bossFight.yy",},
+    {"name":"inst_6195E1A2","path":"rooms/rm_bossFight/rm_bossFight.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -51,11 +54,20 @@
         {"$GMRInstance":"","%Name":"inst_38B52613","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_38B52613","objectId":{"name":"obj_legs","path":"objects/obj_legs/obj_legs.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":96.0,},
         {"$GMRInstance":"","%Name":"inst_24437537","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_24437537","objectId":{"name":"obj_man","path":"objects/obj_man/obj_man.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":64.0,},
       ],"layers":[],"name":"joueur","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"enemy","depth":-400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"$GMRInstanceLayer":"","%Name":"enemy","depth":-400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_3E63E437","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E63E437","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":96.0,},
         {"$GMRInstance":"","%Name":"inst_6825BF7B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6825BF7B","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":64.0,},
         {"$GMRInstance":"","%Name":"inst_55B64680","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55B64680","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":128.0,},
         {"$GMRInstance":"","%Name":"inst_17324D25","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17324D25","objectId":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":896.0,"y":96.0,},
+        {"$GMRInstance":"","%Name":"inst_32D32EAB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_32D32EAB","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"doorId","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":728.0,"y":72.0,},
+        {"$GMRInstance":"","%Name":"inst_315557F3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_315557F3","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"doorId","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":72.0,},
+        {"$GMRInstance":"","%Name":"inst_6195E1A2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6195E1A2","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"doorId","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":392.0,"y":72.0,},
       ],"layers":[],"name":"enemy","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tl_world","depth":20,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tl_world","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":126,"TileCompressedData":[
           -596,-2147483648,1,8,-26,6,1,9,-56,-2147483648,1,8,-24,6,1,9,-16,-2147483648,2,7,30,-4,5,22,29,30,29,
@@ -73,10 +85,10 @@
           4,5,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,
           29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,
           29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,4,5,4,32,-12,-2147483648,114,7,30,29,30,29,30,29,30,
-          29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,
+          29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,5,30,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,
           5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,
           5,4,5,4,5,4,5,4,5,4,5,29,30,29,32,-12,-2147483648,114,7,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,
-          5,4,5,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,
+          5,4,5,30,5,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,
           29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,
           29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,4,5,29,32,-12,-2147483648,114,7,30,29,30,29,30,
           29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,29,30,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,
