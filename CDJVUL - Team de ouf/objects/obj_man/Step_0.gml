@@ -1,6 +1,8 @@
+
+
 //variables
-mouse_down = mouse_check_button(mb_left) && canAttack
-mouse_pressed = mouse_check_button_pressed(mb_left) && canAttack
+mouse_down = mouse_check_button(mb_left) && canAttack && obj_legs.control
+mouse_pressed = mouse_check_button_pressed(mb_left) && canAttack && obj_legs.control
 press_left = keyboard_check(ord("A"))
 press_right =  keyboard_check(ord("D"))
 press_up = keyboard_check(ord("W"))
