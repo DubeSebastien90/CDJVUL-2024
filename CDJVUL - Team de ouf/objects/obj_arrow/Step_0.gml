@@ -4,6 +4,7 @@ if z < 0{
 		depth = 25
 	}
 	if !mort{
+		onGround = true
 		spd = 0
 		vspd = 0
 		image_alpha = lerp(image_alpha,0,0.01)

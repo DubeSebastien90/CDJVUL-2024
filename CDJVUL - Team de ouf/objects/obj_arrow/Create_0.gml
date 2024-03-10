@@ -11,4 +11,4 @@ z = 4
 mort = false
 
 dmg_number = 10
-
+onGround = false
