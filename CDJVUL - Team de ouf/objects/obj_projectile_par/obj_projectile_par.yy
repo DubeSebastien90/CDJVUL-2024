@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_epe",
+  "%Name":"obj_projectile_par",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_enemy_par","path":"objects/obj_enemy_par/obj_enemy_par.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_epe",
+  "name":"obj_projectile_par",
   "overriddenProperties":[],
   "parent":{
     "name":"gr_obj_arme",
@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_sword",
-    "path":"sprites/spr_sword/spr_sword.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -4,6 +4,7 @@ alert = false
 alert_dis = 160
 move_speed = 0.4
 atk_dis = 18
+hp_amount = 100
 
 path = path_add()
 

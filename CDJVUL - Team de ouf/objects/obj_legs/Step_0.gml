@@ -66,12 +66,10 @@ if movementType == 0{
 		moveY = press_down - press_up
 		actualWalkspd = walkspd_belier
 		alpha = 1
-		obj_man.canAttack = true
 	} else {
 		moveX = dashX
 		moveY = dashY
 		actualWalkspd = walkspd_dashBelier
-		obj_man.canAttack = false
 	}
 	if press_space_pressed && dashCooldown <= 0{
 		dashDurationCooldown = dashDuration
@@ -191,12 +189,11 @@ if movementType == 0{
 	cooldownMoveSnake -= 1
 } else if movementType == 4{
 	//taupe
-	if mouse_down{
+	if press_space{
 		imageIndex = 0
-		dirTaupe = point_direction(x,y,mouse_x,mouse_y)
 		actualWalkspd = walkspd_taupe
-		moveX = dcos(dirTaupe)
-		moveY = -dsin(dirTaupe)
+		moveX = press_right-press_left
+		moveY = press_down-press_up
 		if cooldownPartDirt < 0{
 			cooldownPartDirt = 2
 			if point_distance(x,y,mouse_x,mouse_y) > 5{
