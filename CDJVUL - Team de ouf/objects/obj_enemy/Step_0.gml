@@ -8,12 +8,12 @@ switch(state) {
 		if path_index != -1 {state = states.MOVE}
 		ennemy_anim()
 	break
-	//	case states.APPROACHING:
-	//	check_for_player()
-	//	check_facing()
-	//	if path_index == -1 {state = states.IDLE}
-	//	ennemy_anim()
-	//break
+		case states.APPROACHING:
+		check_for_player()
+		check_facing()
+		if path_index == -1 {state = states.IDLE}
+		ennemy_anim()
+	break
 	case states.MOVE:
 		check_for_player()
 		check_facing()
