@@ -1,3 +1,8 @@
+if camBoss == true{
+	follow = self
+	xTo = room_width - 336/2
+} else{
+
 
 //update destination
 if (instance_exists(follow)) 
@@ -5,7 +10,7 @@ if (instance_exists(follow))
 	xTo = follow.x;
 	yTo = y
 }
-
+}
 //offsetX = lerp(offsetX,follow.hspd*15,0.01)
 //offsetY = lerp(offsetY,follow.vspd*7,0.01)
 
