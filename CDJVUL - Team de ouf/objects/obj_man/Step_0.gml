@@ -186,7 +186,7 @@ if weapon == 0{
 	}
 
 	
-	if mouse_pressed{
+	if mouse_pressed && viser = true{
 		viser = false
 		reviens = false
 		spdBoom = spdInitiale
