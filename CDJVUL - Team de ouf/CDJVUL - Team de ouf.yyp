@@ -60,6 +60,7 @@
     {"id":{"name":"obj_part_dirt","path":"objects/obj_part_dirt/obj_part_dirt.yy",},},
     {"id":{"name":"obj_part_Expl","path":"objects/obj_part_Expl/obj_part_Expl.yy",},},
     {"id":{"name":"obj_part_wind","path":"objects/obj_part_wind/obj_part_wind.yy",},},
+    {"id":{"name":"obj_projectile_par","path":"objects/obj_projectile_par/obj_projectile_par.yy",},},
     {"id":{"name":"rm_bossFight","path":"rooms/rm_bossFight/rm_bossFight.yy",},},
     {"id":{"name":"check_for_player","path":"scripts/check_for_player/check_for_player.yy",},},
     {"id":{"name":"screenShake","path":"scripts/screenShake/screenShake.yy",},},
