@@ -18,9 +18,9 @@
     {"name":"Sons","order":3,"path":"folders/Sons.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"gr_spr_boss","order":13,"path":"folders/Sprites/gr_spr_boss.yy",},
+    {"name":"gr_spr_enemy","order":17,"path":"folders/Sprites/gr_spr_enemy.yy",},
     {"name":"gr_spr_legs","order":7,"path":"folders/Sprites/gr_spr_legs.yy",},
     {"name":"gr_spr_weapons","order":8,"path":"folders/Sprites/gr_spr_weapons.yy",},
-    {"name":"gr_spr_enemy","order":17,"path":"folders/Sprites/gr_spr_enemy.yy",},
     {"name":"Tile sets","order":2,"path":"folders/Tile sets.yy",},
   ],
   "ResourceOrderSettings":[
