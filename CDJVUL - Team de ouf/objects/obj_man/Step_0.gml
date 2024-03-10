@@ -179,6 +179,7 @@ if weapon == 0{
 				boomerangReach = 0
 				obj_boomerang.x = x 
 				obj_boomerang.y = y-9
+				obj_boomerang.thrown = false
 			}
 		}
 		weaponX += dcos(dirThrow)*spdBoom
@@ -193,6 +194,7 @@ if weapon == 0{
 		dirThrow = dir
 		spdDecrease = _spdDecrease
 		_boomerangReach = 0
+		obj_boomerang.thrown = true
 	}
 	
 	boomerangReach = lerp(boomerangReach,_boomeranReach,0.1)
