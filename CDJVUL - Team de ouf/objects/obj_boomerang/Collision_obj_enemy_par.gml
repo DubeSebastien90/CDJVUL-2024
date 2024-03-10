@@ -1,9 +1,9 @@
 if thrown{
-if hit_cooldown == 0 {
-	other.hp -= 5
+if other.hit_cooldown < 0 {
+	other.hp -= dommage
 	with(instance_create_depth(x,y,-550,obj_textShow)){
-		text = string(5)
+		text = string(obj_boomerang.dommage)
 	}
-	hit_cooldown = 20
+	other.hit_cooldown = 20
 }
 }

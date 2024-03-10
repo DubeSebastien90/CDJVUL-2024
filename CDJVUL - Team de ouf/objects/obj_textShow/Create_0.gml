@@ -7,3 +7,4 @@ scale = 1
 color = c_white
 vie = 60
 vieMax = vie
+scaleBase = 0.2

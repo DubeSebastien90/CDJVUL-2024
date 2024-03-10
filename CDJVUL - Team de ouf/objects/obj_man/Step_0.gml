@@ -51,6 +51,7 @@ if weapon == 0{
 	}
 	if animationCooldown < 0{
 		animationSword = false
+		obj_epe.attacking = false
 	}
 	weaponX = dcos(dirTrue)*swordReach + x
 	weaponY = -dsin(dirTrue)*swordReach + y - 9
@@ -86,6 +87,7 @@ if weapon == 0{
 		animationSword = true
 		animationCooldown = dureeAtaque
 		cooldownSword = dureeAtaque + 30
+		obj_epe.attacking = true
 	}
 	cooldownSword -= 1
 	obj_epe.x = weaponX

@@ -1,5 +1,5 @@
 dir = 0
-spd = 2.5
+spd = 2.2
 vspd = -2
 grav = 0.1
 image_speed = 0
@@ -24,9 +24,9 @@ function explosion(){
 			}
 		}
 		with obj_man {
-			if distance_to_object(moi) <= 10 {
+			if distance_to_object(moi) <= 25 {
 				hp -= 15
-				with(instance_create_depth(x,y,-550,obj_textShow)){
+				with(instance_create_depth(x,y-20,-550,obj_textShow)){
 					text = string(15)
 					color = c_red
 				}
