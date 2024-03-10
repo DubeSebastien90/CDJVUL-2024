@@ -5,3 +5,5 @@ grav = 0.02
 
 z = 4
 mort = false
+
+dmg_number = 10
