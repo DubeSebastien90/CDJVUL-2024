@@ -14,12 +14,12 @@ if z < 0{
 		instance_destroy()
 	}
 } else {
-	image_angle = point_direction(0,0,dcos(dir)*spd,(-dsin(dir)*spd)+vspd)
+	image_angle = point_direction(0,0,dcos(dir),-dsin(dir))
 	vspd += grav
 	z -= vspd
 }
 
 x += dcos(dir) * spd
-y += (-dsin(dir) * spd) + vspd
+y += (-dsin(dir) * spd)
 
-depth = -bbox_bottom - z
+depth = -bbox_bottom
