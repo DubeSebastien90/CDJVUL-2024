@@ -1,1 +1,1 @@
-dmg = 10
+hit_cooldown = 0
