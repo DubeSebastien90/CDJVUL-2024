@@ -1,3 +1,7 @@
+state = states.IDLE
+xp = x
+yp = y
+facing = 1
 alert = false
 
 //Change for different enemy
@@ -5,6 +9,7 @@ alert_dis = 160
 move_speed = 0.4
 atk_dis = 18
 hp = 50
+push_force = 0.4
 
 path = path_add()
 
