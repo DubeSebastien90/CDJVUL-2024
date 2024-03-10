@@ -267,3 +267,10 @@ obj_man.y = y - 4 - z
 //depth
 depth = -bbox_bottom - z
 obj_man.depth = depth + 1
+
+
+if x > 735{
+	if !bossStart{
+		startBoss()
+	}
+}
