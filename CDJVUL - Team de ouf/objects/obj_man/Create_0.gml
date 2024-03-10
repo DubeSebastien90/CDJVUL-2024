@@ -1,5 +1,6 @@
 depth -= 1
 canAttack = true
+hp = 1000
 
 xscale = 1
 yscale = 1
