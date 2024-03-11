@@ -1,11 +1,11 @@
 //variables
-press_left = keyboard_check(ord("A"))
-press_right =  keyboard_check(ord("D"))
-press_up = keyboard_check(ord("W"))
-press_down = keyboard_check(ord("S"))
-press_space_pressed = keyboard_check_pressed(vk_space)
-press_space =  keyboard_check(vk_space)
-mouse_down = mouse_check_button(mb_left)
+press_left = keyboard_check(ord("A"))  && control
+press_right =  keyboard_check(ord("D"))  && control
+press_up = keyboard_check(ord("W"))  && control
+press_down = keyboard_check(ord("S"))  && control
+press_space_pressed = keyboard_check_pressed(vk_space)  &&control
+press_space =  keyboard_check(vk_space)  && control
+mouse_down = mouse_check_button(mb_left)  && control
 
 //press_something = press_up||press_down||press_right||press_left
 
@@ -98,8 +98,10 @@ if movementType == 0{
 	//poisson
 	if z <= 0{
 		//sauter
-		zspd = 0.6 + random_range(-0.03,0.03)
 		z = 0.01
+		if !obj_man.mort{
+		zspd = 0.6 + random_range(-0.03,0.03)
+		
 		dirX = (press_right - press_left)
 		dirY = (press_down - press_up)
 		
@@ -110,6 +112,7 @@ if movementType == 0{
 		} else{
 			dir += random_range(-10,10)
 			diffSpd = random_range(-0.05,0.05) + walkspd_fish
+		}
 		}
 	}
 	actualWalkspd = diffSpd
@@ -261,7 +264,7 @@ if place_meeting(x+hspd,y+vspd,obj_collision){
 if !(bossStart == true && !control){
 	x += hspd
 	y += vspd
-} else{
+} else if obj_man.mort = false{
 	x = lerp(x,xToGo,0.1)
 }
 

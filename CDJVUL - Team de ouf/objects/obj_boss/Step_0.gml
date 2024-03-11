@@ -17,7 +17,7 @@ if active{
 	//idle - 0, single - 1, multi - 2, charge - 3, mort - 4
 	
 	//charger les attaques
-	if cooldownAttack < 0{
+	if cooldownAttack < 0 && !mort{
 		if attackPhase == 1{
 			//single
 			image_index = 0
@@ -90,6 +90,7 @@ if jump = true{
 		attackPhase = 0
 		waitTime = waitBetween
 		image_index = 0
+		screenShake(3,10)
 		for(var i = 0; i < 360;){
 			instance_create_depth(x+dcos(i)*radiusExpl*random_range(0.2,0.8),20+y-dsin(i)*radiusExpl*random_range(0.2,0.8),depth,obj_part_wind)
 			i += random_range(40,50)
@@ -99,7 +100,7 @@ if jump = true{
 			i += random_range(20,30)
 		}
 		if instance_exists(obj_man){
-			if distance_to_point(obj_man.x,obj_man.y+20-8) < radiusExpl{
+			if distance_to_point(obj_man.x,obj_man.y+20-8) < radiusExpl && !obj_man.mort{
 				var ouch = round((1 - (distance_to_point(obj_man.x,obj_man.y+20-8) / radiusExpl)) * dmgExpl)
 				obj_man.hp -= ouch
 				with(instance_create_depth(obj_man.x,obj_man.y-20,-550,obj_textShow)){
@@ -114,7 +115,7 @@ xShadow = lerp(xShadow,x,0.1)
 yShadow = lerp(yShadow,y_to,0.1)
 
 if hp <= 0 {
-	instance_destroy()
+	mortAnim()
 }
 
 //boomerang

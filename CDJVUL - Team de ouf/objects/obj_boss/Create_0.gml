@@ -1,6 +1,7 @@
 active = false
 attackPhase = 0
-hp = 1000
+hpMax = 300
+hp = hpMax
 hit_cooldown = 0
 
 collisionSword = false
@@ -22,10 +23,15 @@ yShadow = y
 y_to = y
 radiusExpl = 40
 
-dmgExpl = 100
-dmgEclairGros = 70
-dmgEclairPetit = 30
+dmgExpl = 50
+dmgEclairGros = 30
+dmgEclairPetit = 15
 
 for (var i = 0; i < 8; i++){
 	dirEclair[i] = i*45
+}
+
+function mortAnim(){
+	mort = true
+	image_index = 4
 }

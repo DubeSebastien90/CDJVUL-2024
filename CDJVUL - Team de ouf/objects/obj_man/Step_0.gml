@@ -1,17 +1,24 @@
-
+//mort
+if hp <= 0{
+	image_index = 1
+	obj_legs.control = false
+	mort = true
+}
 
 //variables
 mouse_down = mouse_check_button(mb_left) && canAttack && obj_legs.control
 mouse_pressed = mouse_check_button_pressed(mb_left) && canAttack && obj_legs.control
-press_left = keyboard_check(ord("A"))
-press_right =  keyboard_check(ord("D"))
-press_up = keyboard_check(ord("W"))
-press_down = keyboard_check(ord("S"))
-press_something = press_up||press_down||press_right||press_left
+press_left = keyboard_check(ord("A")) && obj_legs.control
+press_right =  keyboard_check(ord("D")) && obj_legs.control
+press_up = keyboard_check(ord("W")) && obj_legs.control
+press_down = keyboard_check(ord("S")) && obj_legs.control
+press_something = (press_up||press_down||press_right||press_left)  && obj_legs.control
 
 cote = sign(mouse_x-x) 
 
+if !mort{
 dir = point_direction(x,y-8,mouse_x,mouse_y)
+}
 
 //attaque
 if weapon == 0{

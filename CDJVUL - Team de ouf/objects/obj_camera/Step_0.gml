@@ -31,8 +31,6 @@ y += (yTo - y) / 5
 x += random_range(-shake_remain,shake_remain);
 y += random_range(-shake_remain,shake_remain);
 shake_remain = max(0,shake_remain-((1/shake_lenght)*shake_magnitude));
-
-
 //update camera view
 camera_set_view_pos(cam,x-_camW/2,y-_camH/2);
 camera_set_view_size(cam,_camW,_camH)

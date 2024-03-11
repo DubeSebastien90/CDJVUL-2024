@@ -1,6 +1,8 @@
 depth -= 1
 canAttack = true
-hp = 300
+hpMax = 300
+hp = hpMax
+mort = false
 
 xscale = 1
 yscale = 1
