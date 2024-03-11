@@ -14,7 +14,7 @@ bombRadius = 25
 function explosion(){
 	if !mort{
 		screenShake(3,10)
-		
+		obj_son.play_sound_low(snd_explosion)
 		var moi = self
 		with obj_enemy_par {
 			if !mort{

@@ -97,6 +97,7 @@ if weapon == 0{
 		animationCooldown = dureeAtaque
 		cooldownSword = dureeAtaque + 30
 		obj_epe.attacking = true
+		obj_son.play_sound(snd_sword,0.1)
 	}
 	cooldownSword -= 1
 	obj_epe.x = weaponX
@@ -143,6 +144,7 @@ if weapon == 0{
 			spd = (moi.bowState - 0.5)*1.2
 			dmg = moi.dmgBow[moi.bowState]
 		}
+		obj_son.play_sound(snd_arrow,0.1)
 		bowState = 0
 	}
 	if cooldownRecharge < 0{
@@ -191,6 +193,9 @@ if weapon == 0{
 				obj_boomerang.x = x 
 				obj_boomerang.y = y-9
 				obj_boomerang.thrown = false
+				with(obj_son){
+					audio_stop_sound(snd_boomerang)
+				}
 			}
 		}
 		weaponX += dcos(dirThrow)*spdBoom
@@ -206,6 +211,7 @@ if weapon == 0{
 		spdDecrease = _spdDecrease
 		_boomerangReach = 0
 		obj_boomerang.thrown = true
+		obj_son.play_sound_normal(snd_boomerang)
 	}
 	
 	boomerangReach = lerp(boomerangReach,_boomeranReach,0.1)
