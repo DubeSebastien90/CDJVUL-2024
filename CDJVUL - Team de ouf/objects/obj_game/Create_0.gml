@@ -27,3 +27,18 @@ enum states {
 	ATTACK,
 	DEAD
 }
+
+
+animation = true
+dist = 60
+dir = 0
+temps = 0
+cooldownEventMax = 5*60
+cooldownEvent = cooldownEventMax
+nbStages = 4
+stage = 0
+
+textIntro[0] = "Hello creature, I am your beloved god"
+textIntro[1] = "I created you by mixing parts of \nother creatures I found"
+textIntro[2] = "You shall love your body as it is"
+textIntro[3] = "What? You don't like it? LOL"

@@ -5,7 +5,7 @@ x = 336/2
 vspd = 0
 hspd = 0
 actualWalkspd = 0
-control = true
+control = false
 diff = 0
 lerpVal = 1
 

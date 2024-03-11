@@ -6,7 +6,7 @@ if keyboard_check(vk_alt){
 */
 var xDiff = obj_camera.x - 336/2
 
-
+if !animation{
 //tuto
 draw_set_color(c_white)
 var l = 10
@@ -43,4 +43,18 @@ if obj_boss.mort == true{
 	draw_set_halign(fa_center)
 	draw_text_transformed(xDiff+336/2,192/2,"Good job! Now the world will\nfall into chaos and destruction",0.8,0.8,0)	
 	draw_text_transformed(xDiff+336/2,192/2 + 40,"Press R to restart",0.7,0.7,0)
+}
+} else{
+	draw_set_color(c_black)
+	draw_set_valign(fa_top)
+	draw_set_halign(fa_center)
+	draw_set_font(fnt_pixel)
+	draw_text_transformed(xDiff+336/2,10,textIntro[stage],0.8,0.8,0)
+	dir += 0.5
+	temps += 0.1
+	var _xscale = -sign(dcos(dir))
+	if _xscale = 0{
+		_xscale = 1
+	}
+	draw_sprite_ext(spr_boss_idle,3,xDiff+336/2+dcos(dir)*(dist+sin(temps)*5),192/2+-dsin(dir)*(dist+sin(temps)*5),_xscale,1,0,c_white,1)
 }

@@ -26,3 +26,13 @@ if nb_ennemies <= 0 && waveState = 1{
 		}
 	}
 }
+
+if cooldownEvent < 0{
+	stage += 1
+	cooldownEvent = cooldownEventMax
+	if stage >= nbStages{
+		animation = false
+		obj_legs.control = true
+	}
+}
+cooldownEvent -= 1
