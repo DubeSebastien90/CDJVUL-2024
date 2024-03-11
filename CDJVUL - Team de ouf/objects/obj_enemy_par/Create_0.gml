@@ -8,9 +8,10 @@ alert = false
 alert_dis = 160
 move_speed = 0.4
 atk_dis = 18
-hp = 50
+hp_max = 50
 //push_force = 0.4
 
+hp = hp_max
 path = path_add()
 
 calc_path_delay = 30
