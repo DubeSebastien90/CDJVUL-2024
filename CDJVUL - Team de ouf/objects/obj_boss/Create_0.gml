@@ -1,6 +1,6 @@
 active = false
 attackPhase = 0
-hpMax = 300
+hpMax = 500
 hp = hpMax
 hit_cooldown = 0
 
@@ -23,9 +23,9 @@ yShadow = y
 y_to = y
 radiusExpl = 40
 
-dmgExpl = 50
-dmgEclairGros = 30
-dmgEclairPetit = 15
+dmgExpl = 40
+dmgEclairGros = 25
+dmgEclairPetit = 10
 
 for (var i = 0; i < 8; i++){
 	dirEclair[i] = i*45

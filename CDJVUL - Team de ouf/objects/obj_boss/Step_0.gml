@@ -100,8 +100,8 @@ if jump = true{
 			i += random_range(20,30)
 		}
 		if instance_exists(obj_man){
-			if distance_to_point(obj_man.x,obj_man.y+20-8) < radiusExpl && !obj_man.mort{
-				var ouch = round((1 - (distance_to_point(obj_man.x,obj_man.y+20-8) / radiusExpl)) * dmgExpl)
+			if distance_to_point(obj_man.x,obj_man.y-20-8) < radiusExpl && !obj_man.mort{
+				var ouch = dmgExpl
 				obj_man.hp -= ouch
 				with(instance_create_depth(obj_man.x,obj_man.y-20,-550,obj_textShow)){
 					text = string(ouch)

@@ -50,6 +50,8 @@ if obj_boss.mort == true{
 	draw_set_halign(fa_center)
 	draw_set_font(fnt_pixel)
 	draw_text_transformed(xDiff+336/2,10,textIntro[stage],0.8,0.8,0)
+	draw_set_valign(fa_bottom)
+	draw_text_transformed(xDiff+336/2,192-10,"Escape to skip the cutscene and Tab to enable fullscreen\nR to restart and reroll your character",0.5,0.5,0)
 	dir += 0.5
 	temps += 0.1
 	var _xscale = -sign(dcos(dir))

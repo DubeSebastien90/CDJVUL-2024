@@ -10,11 +10,11 @@ if keyboard_check_pressed(vk_escape){
 	}
 }
 
-//if  obj_boss.mort == true || obj_man.mort == true{
+if  obj_boss.mort == true || obj_man.mort == true || animation{
 	if keyboard_check_released(ord("R")){
 		game_restart()
 	}	
-//}
+}
 
 if obj_legs.x > 416 && waveState = 0{
 	waveState = 1
