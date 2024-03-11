@@ -5,7 +5,7 @@ hit_cooldown = 0
 
 collisionSword = false
 
-
+mort = false
 //attaques
 dureChargeAttaque = 180
 cooldownAttack = dureChargeAttaque
@@ -20,7 +20,7 @@ newDest = false
 xShadow = x
 yShadow = y
 y_to = y
-radiusExpl = 30
+radiusExpl = 40
 
 dmgExpl = 100
 dmgEclairGros = 70

@@ -37,6 +37,11 @@ cooldownRecharge = 60
 if weapon == 1{
 	instance_create_depth(x,y,depth,obj_arc)
 }
+dmgBow[0] = 0
+dmgBow[1] = 0
+dmgBow[2] = 10
+dmgBow[3] = 30
+dmgBow[4] = 50
 
 //weapon 2 - boomerang
 boomerangReach = 15

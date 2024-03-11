@@ -36,7 +36,7 @@ dashDuration = 20
 dashDurationCooldown = 0
 dashX = 0
 dashY = 0
-walkspd_belier = 0.6
+walkspd_belier = 0.4
 walkspd_dashBelier = 2.2
 lerpBelier = 0.1
 

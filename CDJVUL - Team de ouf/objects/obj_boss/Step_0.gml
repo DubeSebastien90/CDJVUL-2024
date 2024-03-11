@@ -90,11 +90,20 @@ if jump = true{
 		attackPhase = 0
 		waitTime = waitBetween
 		image_index = 0
+		for(var i = 0; i < 360;){
+			instance_create_depth(x+dcos(i)*radiusExpl*random_range(0.2,0.8),20+y-dsin(i)*radiusExpl*random_range(0.2,0.8),depth,obj_part_wind)
+			i += random_range(40,50)
+		}
+		for(var i = 0; i < 360;){
+			instance_create_depth(x+dcos(i)*radiusExpl,20+y-dsin(i)*radiusExpl,depth,obj_part_wind)
+			i += random_range(20,30)
+		}
 		if instance_exists(obj_man){
-			if distance_to_object(obj_man) < radiusExpl{
-				obj_man.hp -= dmgExpl
+			if distance_to_point(obj_man.x,obj_man.y+20-8) < radiusExpl{
+				var ouch = round((1 - (distance_to_point(obj_man.x,obj_man.y+20-8) / radiusExpl)) * dmgExpl)
+				obj_man.hp -= ouch
 				with(instance_create_depth(obj_man.x,obj_man.y-20,-550,obj_textShow)){
-					text = string(obj_boss.dmgExpl)
+					text = string(ouch)
 					color = c_red
 				}
 			}

@@ -1,7 +1,19 @@
 if hp <= 0 {
-	instance_destroy()
+	if !mort{
+		xMort = x 
+		yMort = y
+		obj_game.nb_ennemies -= 1
+		path_delete(path)
+	}
+	x = xMort
+	y = yMort
+	mort = true
+	state = states.DEAD
+	sprite_index = spr_dead
+	//instance_destroy()
 }
 
+if !mort{
 switch(state) {
 	case states.IDLE:
 		check_for_player()
@@ -21,13 +33,34 @@ switch(state) {
 		ennemy_anim()
 	break
 	case states.ATTACK:
-		ennemy_anim()
+		with(instance_create_depth(x,y,depth,obj_eclair)){
+			dir = point_direction(x,y,obj_man.x,obj_man.y-8)
+			spd = 1
+			image_xscale = 0.3
+			image_yscale = 0.3
+		}
 	break
 	case states.DEAD:
 		ennemy_anim()
 	break
 }
+}
 if hit_cooldown > 0 {hit_cooldown -= 1}
+
+if distance_to_object(obj_man) < atk_dis{
+	if cooldownAttaque < 0 && state != states.DEAD{
+	with(instance_create_depth(x,y,depth,obj_eclair)){
+		dir = point_direction(x,y,obj_man.x,obj_man.y-8)
+		spd = 1
+		image_xscale = 0.5
+		image_yscale = 0.5
+		dammage = 5
+	}
+	cooldownAttaque = cooldownMax
+	}
+	cooldownAttaque -= 1
+}
+
 
 var _inst = instance_place(x, y, obj_enemy);
 if (_inst != noone) {

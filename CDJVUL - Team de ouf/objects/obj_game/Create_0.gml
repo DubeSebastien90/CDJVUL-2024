@@ -15,7 +15,7 @@ textTutoArme[2] = "Boomerang\nSome people may say it looks like a common yellow 
 textTutoArme[3] = "Bomb\nThrow them to your ennemies with the left mouse button, but watch out for the explosion dammage... it hurts."
 
 textTutoLegs[0] = "Crab\nYou can only move in two directions with WASD, but you can change your movement axis by pressing space."
-textTutoLegs[1] = "Lama\nYou are incredibly slow, but you can dash to avoid projectiles with spacebar. Move with WASD."
+textTutoLegs[1] = "Goat\nYou are incredibly slow, but you can dash to avoid projectiles with spacebar. Move with WASD."
 textTutoLegs[2] = "Fish\nYou can only change direction when you are on the ground using WASD, but it's not very effective..."
 textTutoLegs[4] = "Worm\nYou can dig underground to move by pressing space and using WASD, but you can only attack while out of the ground."
 

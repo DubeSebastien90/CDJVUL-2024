@@ -5,9 +5,9 @@ facing = 1
 alert = false
 
 //Change for different enemy
-alert_dis = 160
+alert_dis = 100
 move_speed = 0.4
-atk_dis = 18
+atk_dis = 70
 hp_max = 50
 //push_force = 0.4
 

@@ -1,3 +1,4 @@
+if other.mort = false{
 if !onGround {
 	instance_destroy()
 	other.hp -= dmg
@@ -5,4 +6,5 @@ if !onGround {
 	with(instance_create_depth(x,y,-550,obj_textShow)){
 		text = string(_dmg)
 	}
+}
 }

@@ -1,3 +1,4 @@
+if other.mort = false{
 if thrown{
 if other.hit_cooldown <= 0 {
 	other.hp -= dommage
@@ -5,5 +6,6 @@ if other.hit_cooldown <= 0 {
 		text = string(obj_boomerang.dommage)
 	}
 	other.hit_cooldown = 20
+}
 }
 }

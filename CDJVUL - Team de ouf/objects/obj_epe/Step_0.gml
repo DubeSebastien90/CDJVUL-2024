@@ -2,6 +2,7 @@ depth = obj_legs.depth - 1 - 16
 
 if attacking{
 	with(obj_enemy_par){
+		if !mort{
 		if place_meeting(x,y,obj_epe){
 			if collisionSword = false{
 				hp -= obj_epe.dmgEpe
@@ -10,6 +11,7 @@ if attacking{
 				}
 			}
 			collisionSword = true
+		}
 		}
 	}
 } else{
