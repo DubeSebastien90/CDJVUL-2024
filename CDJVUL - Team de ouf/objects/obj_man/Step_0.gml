@@ -1,5 +1,5 @@
 //mort
-if hp <= 0{
+if hp <= 0 && obj_boss.mort = false{
 	image_index = 1
 	obj_legs.control = false
 	mort = true

@@ -114,7 +114,7 @@ if jump = true{
 xShadow = lerp(xShadow,x,0.1)
 yShadow = lerp(yShadow,y_to,0.1)
 
-if hp <= 0 {
+if hp <= 0  && obj_man.mort = false{
 	mortAnim()
 }
 

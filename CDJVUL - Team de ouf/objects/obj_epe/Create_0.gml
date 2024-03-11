@@ -1,2 +1,2 @@
 attacking = false
-dmgEpe = 30
+dmgEpe = 60
