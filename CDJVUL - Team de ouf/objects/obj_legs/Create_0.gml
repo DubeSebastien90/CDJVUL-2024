@@ -131,6 +131,7 @@ sprite_index = spr[movementType]
 bossStart = false
 xToGo = 0
 function startBoss(){
+	obj_son.switch_music()
 	xToGo = x + 40
 	control = false
 	bossStart = true

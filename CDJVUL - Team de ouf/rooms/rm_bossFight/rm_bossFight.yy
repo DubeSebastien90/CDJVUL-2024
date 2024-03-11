@@ -43,6 +43,7 @@
     {"name":"inst_32D32EAB","path":"rooms/rm_bossFight/rm_bossFight.yy",},
     {"name":"inst_315557F3","path":"rooms/rm_bossFight/rm_bossFight.yy",},
     {"name":"inst_6195E1A2","path":"rooms/rm_bossFight/rm_bossFight.yy",},
+    {"name":"inst_4AD6E981","path":"rooms/rm_bossFight/rm_bossFight.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -68,6 +69,7 @@
         {"$GMRInstance":"","%Name":"inst_6195E1A2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6195E1A2","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"properties":[
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"doorId","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":392.0,"y":72.0,},
+        {"$GMRInstance":"","%Name":"inst_4AD6E981","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4AD6E981","objectId":{"name":"obj_son","path":"objects/obj_son/obj_son.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":752.0,"y":80.0,},
       ],"layers":[],"name":"enemy","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tl_world","depth":20,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tl_world","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":126,"TileCompressedData":[
           -596,-2147483648,1,8,-26,6,1,9,-56,-2147483648,1,8,-24,6,1,9,-16,-2147483648,2,7,30,-4,5,22,29,30,29,

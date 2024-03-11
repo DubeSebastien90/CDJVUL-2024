@@ -1,6 +1,6 @@
 depth -= 1
 canAttack = true
-hpMax = 300
+hpMax = 100
 hp = hpMax
 mort = false
 
